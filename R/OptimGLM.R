@@ -1,7 +1,7 @@
 #' Find out what is the error distribution and link function that best fits a classification generalized linear model to your data
 #'
 #' @name Optim.GLM
-#' @description \code{Optim.GLM} is used to fit the best classification \code{GLM} to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when different error distribution and link function was used in the model. In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, error type I and error type II) according to a given criterion.
+#' @description \code{Optim.GLM} is used to fit the best classification \code{GLM} to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when different error distribution and link function was used in the model. In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, type I error and type II error) according to a given criterion.
 #'
 #' @param formula A formula of the form \code{y ~ x1 + x2 + \dots}
 #' @param data Data frame from which variables specified in  \code{formula} are preferentially to be taken.
@@ -34,7 +34,7 @@
 #'
 #' @export
 
-Optim.GLM <- function (formula, data,p,criteria=c("success_rate","error_ti","error_tii"),seed=NULL,...)
+Optim.GLM <- function (formula, data,p,criteria=c("success_rate","ti_error","tii_error"),seed=NULL,...)
 {
 
   #Detect Response Variable
@@ -155,8 +155,8 @@ GLMmodel <- function(training,testing, formula, familyR, ...){
 
   thresholds <- data.frame(Threshold=seq(0,1,0.05),
                            success_rate=unlist(Success_rate_threshold),
-                           error_ti=unlist(error_tI_threshold),
-                           error_tii=unlist(error_tII_threshold)
+                           ti_error=unlist(error_tI_threshold),
+                           tii_error=unlist(error_tII_threshold)
                            )
 
 return(list(Models=Model,Predicts=newpredict,RMSEs=rmse,Thresholds=thresholds,Confussion_Matrixs=mc_threshold))

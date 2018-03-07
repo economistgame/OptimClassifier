@@ -5,8 +5,8 @@
 \title{Discover the best Neural Network for your data}
 \usage{
 Optim.NN(formula, data, p, seed = NULL, criteria = c("success_rate",
-  "error_ti", "error_tii"), basedhistory = TRUE, history = TRUE,
-  maxhiddenlayers = 10, maxit = 500, MaxNWts = 2000, ...)
+  "ti_error", "tii_error"), maxhiddenlayers = 10, maxit = 500,
+  MaxNWts = 2000, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}
@@ -18,10 +18,6 @@ Optim.NN(formula, data, p, seed = NULL, criteria = c("success_rate",
 \item{seed}{a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.}
 
 \item{criteria}{This variable selects the criteria to select the best threshold. The default value is \code{success_rate}}
-
-\item{basedhistory}{Test the best options in the past.}
-
-\item{history}{Save in a system file the two best values of N. For use in the future.}
 
 \item{maxhiddenlayers}{The high number of hidden layers for the neural network considers.}
 

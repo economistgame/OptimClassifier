@@ -1,7 +1,7 @@
 #' Find out what is the transformation of the response variable that best fits a classification linear model to your data
 #'
 #' @name Optim.LM
-#' @description  \code{Optim.LM} is used to fit the best classification linear model to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when transformations are applied on the response variable. In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, error type I and error type II) according to a given criterion.
+#' @description  \code{Optim.LM} is used to fit the best classification linear model to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when transformations are applied on the response variable. In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, type I error and type II error) according to a given criterion.
 #'
 #' @param formula A formula of the form \code{y ~ x1 + x2 + \dots}
 #' @param data Data frame from which variables specified in  \code{formula} are preferentially to be taken.
@@ -155,8 +155,8 @@ threshold <- function(quantile,y, yhat,categories){
   error_tII_threshold <- sum(mc_threshold[lower.tri(mc_threshold, diag = FALSE)])/sum(mc_threshold)
   return(list(data.frame(threshold=current_threshold,
                          success_rate=Success_rate_threshold,
-                         error_ti=error_tI_threshold,
-                         error_tii=error_tII_threshold),
+                         ti_error=error_tI_threshold,
+                         tii_error=error_tII_threshold),
                         mc_threshold))
 }
 

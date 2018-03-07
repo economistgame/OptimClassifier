@@ -4,8 +4,8 @@
 \alias{Optim.SVM}
 \title{Discover the best SVM for your data}
 \usage{
-Optim.SVM(formula, data, p, criteria = c("rmse", "success", "errorti",
-  "errortii"), seed = NULL, ...)
+Optim.SVM(formula, data, p, criteria = c("rmse", "success", "ti_error",
+  "tii_error"), seed = NULL, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}

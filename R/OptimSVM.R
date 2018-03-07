@@ -22,7 +22,7 @@
 #' }
 #'
 #' @export
-Optim.SVM <- function (formula, data,p, criteria=c("rmse","success","errorti","errortii"),seed=NULL, ...){
+Optim.SVM <- function (formula, data,p, criteria=c("rmse","success","ti_error","tii_error"),seed=NULL, ...){
 
   if (!requireNamespace("e1071", quietly = TRUE)) {
     stop(crayon::bold(crayon::red("e1071 package needed for this function to work. Please install it.")),

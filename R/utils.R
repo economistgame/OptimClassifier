@@ -42,7 +42,7 @@ threshold <- function(quantile,y, yhat,categories){
   error_tII_threshold <- sum(mc_threshold[lower.tri(mc_threshold, diag = FALSE)])/sum(mc_threshold)
   return(list(data.frame(threshold=current_threshold,
                          success_rate=Success_rate_threshold,
-                         error_ti=error_tI_threshold,
-                         error_tii=error_tII_threshold),mc_threshold))
+                         ti_error=error_tI_threshold,
+                         tii_error=error_tII_threshold),mc_threshold))
 }
 

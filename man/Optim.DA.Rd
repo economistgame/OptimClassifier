@@ -4,8 +4,8 @@
 \alias{Optim.DA}
 \title{Discover the best Discriminant Analysis for your data}
 \usage{
-Optim.DA(formula, data, p, criteria = c("rmse", "success", "errorti",
-  "errortii"), seed = NULL, ...)
+Optim.DA(formula, data, p, criteria = c("rmse", "success", "ti_error",
+  "tii_error"), seed = NULL, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}
@@ -36,7 +36,7 @@ if(interactive()){
 ## Load a Dataset
 data(AustralianCredit)
 ## Generate a Model
-modelFit <- Optim.DA(Y~., SpanishCredit, p = 0.7, seed=2018)
+modelFit <- Optim.DA(Y~., AustralianCredit, p = 0.7, seed=2018)
 modelFit
 }
 
