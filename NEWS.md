@@ -2,7 +2,7 @@
 
 * Fixed `Optim.DA` example 
 * Removed history option in `Optim.NN` function for apply in the future training. This change occurs to fully align with CRAN policies.
-* Improve the different 
+* Improve the different function helps
 
 # OptimClassifier 0.1.0
 
