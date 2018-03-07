@@ -34,7 +34,4 @@ summary(creditscoring,2)
  
 
 ```
-<<<<<<< HEAD
-=======
 
->>>>>>> 707055e85ebc24cc0eb8840d109fc597e6e80c27
