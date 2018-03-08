@@ -1,5 +1,9 @@
 # OptimClassifier <img src="man/figures/logo.png" align="right" />
 
+[![CRAN Version](https://www.r-pkg.org/badges/version/OptimClassifier)](https://cran.r-project.org/web/packages/OptimClassifier/)
+[![Linux/Mac Build Status](https://travis-ci.org/economistgame/OptimClassifier.svg?branch=master)](https://travis-ci.org/economistgame/OptimClassifier)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/f3h44m7jwr8ms9tf?svg=true)](https://ci.appveyor.com/project/economistgame/optimclassifier)
+
 OptimClassifier provides a set of tools for creating models, selecting the best parameters combination for a model, and select the best threshold for your binary classification. The package contains tools for:
 
 - Linear Model (LM) 
@@ -12,7 +16,26 @@ OptimClassifier provides a set of tools for creating models, selecting the best 
 
 as well as others that will be implemented in the future.
 
-## Example
+### Installation
+
+You can install this package from CRAN:
+
+```r
+install.packages("OptimClassifier")
+```
+Or you can install the development version from Github with [devtools](https://github.com/hadley/devtools) or [remotes](https://github.com/r-lib/remotes)
+
+```r
+library(devtools)
+install_github("economistgame/OptimClassifier")
+```
+
+```r
+library(remotes)
+install_github("economistgame/OptimClassifier")
+```
+
+### Example
 
 This is a basic example which shows you how to solve a common credit scoring problem with this package:
 

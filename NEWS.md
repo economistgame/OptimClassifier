@@ -1,3 +1,10 @@
+# OptimClassifier DEVEL
+
+* Added Issue report to `DESCRIPTION`
+* Added Travis-CI (Linux and Mac OS), and AppVeyor (Windows)
+* Added installation section and badges to `README.md`
+
+
 # OptimClassifier 0.1.2
 
 * Fixed `Optim.DA` example 
