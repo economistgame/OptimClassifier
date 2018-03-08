@@ -16,6 +16,8 @@ Description: Patterns searching and binary classification in economic and financ
               Classification And Regression Trees (CART), Neural Networks (NN) and Support Vector Machines (SVM).
 Depends: R (>= 3.2.3)
 License: GPL (>= 2)
+BugReports: https://github.com/economistgame/OptimClassifier/issues
+URL: https://github.com/economistgame/OptimClassifier
 Imports: crayon,
          dplyr,
          MASS,

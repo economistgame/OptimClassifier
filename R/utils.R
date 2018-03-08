@@ -2,8 +2,8 @@
 
 
 ## Styles
-VersionMajor <- R.Version()$major
-VersionMinor <- R.Version()$minor
+#VersionMajor <- R.Version()$major
+#VersionMinor <- R.Version()$minor
 
 warningstyle <- crayon::make_style(WarningStyle = rgb(1,0.2,0), bg = FALSE)
 errorstyle <- crayon::make_style(ErrorStyle = "red", bg = FALSE)

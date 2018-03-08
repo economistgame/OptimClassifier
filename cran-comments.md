@@ -1,6 +1,9 @@
 ## Test environments
 * local Mint 18, R 3.4.3
-* ubuntu 12.04 (on travis-ci), R 3.4.3
+* ubuntu 14.04.5 LTS (on travis-ci), R 3.4.3
+* ubuntu 14.04.5 LTS (on travis-ci), R 3.4.3
+* macos  OS X Sierra 10.12 (on travis-ci), R 3.4.3
+* debian jessie, R 3.2.2
 * win-builder (devel and release)
 
 ## R CMD check results
