@@ -21,8 +21,8 @@
 #' if(interactive()){
 #' # The best way to demostrate the functionality is test the function
 #'
-#' ## First test in list mode
-#' Sampling <- sampler(SpanishCredit,p=0.7,output="list")
+#'
+#' Sampling <- sampler(AustralianCredit,p=0.7)
 # ## Now you consider to fix the random seed and write directly
 # ## the training/testing objects to the Global Environment.
 # sampler(SpanishCredit,p=0.55,seed=1,output="environment")

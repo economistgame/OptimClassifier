@@ -20,8 +20,8 @@ A training/test partition are created by \code{sampler} function.
 if(interactive()){
 # The best way to demostrate the functionality is test the function
 
-## First test in list mode
-Sampling <- sampler(SpanishCredit,p=0.7,output="list")
+
+Sampling <- sampler(AustralianCredit,p=0.7)
 
 }
 

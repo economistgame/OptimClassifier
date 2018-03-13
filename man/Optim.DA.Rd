@@ -4,7 +4,7 @@
 \alias{Optim.DA}
 \title{Discover the best Discriminant Analysis for your data}
 \usage{
-Optim.DA(formula, data, p, criteria = c("rmse", "success", "ti_error",
+Optim.DA(formula, data, p, criteria = c("rmse", "success_rate", "ti_error",
   "tii_error"), seed = NULL, ...)
 }
 \arguments{
