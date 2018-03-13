@@ -1,5 +1,5 @@
 # OptimClassifier DEVEL
-
+* Unified a `criteria` option in `Optim.DA` function
 * Added Issue report to `DESCRIPTION`
 * Added Travis-CI (Linux and Mac OS), and AppVeyor (Windows)
 * Added installation section and badges to `README.md`
