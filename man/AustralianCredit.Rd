@@ -1,8 +1,7 @@
 \name{AustralianCredit}
 \alias{AustralianCredit}
 \docType{data}
-\title{
-Australian Credit}
+\title{A Credit Approval Dataset}
 \description{
 This dataset concerns credit card applications and represent positive and negative instances of people who were and were not granted credit. It has served as an important test data set for several credit-scoring algorithms. This dataset was introduced by Quinlan (1987).
 }
@@ -34,6 +33,11 @@ Quinlan,R. (1987). "Simplifying decision trees", Int J Man-Machine Studies 27, p
 }
 \examples{
 data(AustralianCredit)
-## maybe str(AustralianCredit) ; plot(AustralianCredit) ...
+
+## See a general view of a dataset
+summary(AustralianCredit)
+
+## Plot a response variable
+plot(AustralianCredit$Y)
 }
 \keyword{datasets}

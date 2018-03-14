@@ -21,18 +21,21 @@ Optim.SVM(formula, data, p, criteria = c("rmse", "success", "ti_error",
 \item{...}{arguments passed to \code{\link[e1071]{svm}}}
 }
 \value{
-An object of class \code{Optim}. See\code{\link{Optim.object}}
+An object of class \code{Optim}. See \code{\link{Optim.object}}
 }
 \description{
 This function allows to find the best kernel for tune your support vector machine (SVM).
 }
 \examples{
 if(interactive()){
+
 ## Load a Dataset
 data(AustralianCredit)
+
 ## Generate a model
 modelFit <- Optim.SVM(Y~., AustralianCredit, p = 0.7, seed=2018)
 modelFit
+
 }
 
 }

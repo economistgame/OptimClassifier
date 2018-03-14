@@ -1,106 +1,206 @@
-#'@importFrom "utils" "capture.output"
+#' Print an Optim Object
+#'
+#' @name print.Optim
+#' @description This function prints an Optim object. It is a method for the generic function print of class "Optim".
+#'
+#' @param x object of class "Optim"
+#' @param plain select if you want enriched output mode (with colors and bold) or a plain output mode.
+#' @param digits minimal number of significant digits.
+#' @param ... further arguments passed to or from other methods.
+#'
+#' @importFrom "utils" "capture.output"
 #' @S3method print Optim
 
-print.Optim <- function(x, minlength = 0L, spaces = 2L,
-                        digits = getOption("digits"), ...)
-{
+print.Optim <- function(x, plain=FALSE,
+                        digits = getOption("digits"), ...) {
+
   if (!inherits(x, "Optim")) stop("Not a legitimate \"Optim\" object")
 
-  switch (x[[1]],
-    "LM" = {info.lm(x)},
-    "LMM" ={info.lmm(x)},
-    "GLM" = {info.glm(x)},
-    "CART"={info.cart(x)},
-    "DA"={info.da(x)},
-    "NN" = {info.nn(x)},
-    "SVM" = {info.svm(x)}
+  switch(x[[1]],
+    "LM" = {
+      info.lm(x, plain, digits)
+    },
+    "LMM" = {
+      info.lmm(x, plain, digits)
+    },
+    "GLM" = {
+      info.glm(x, plain, digits)
+    },
+    "CART" = {
+      info.cart(x, plain, digits)
+    },
+    "DA" = {
+      info.da(x, plain)
+    },
+    "NN" = {
+      info.nn(x, plain, digits)
+    },
+    "SVM" = {
+      info.svm(x, plain, digits)
+    }
   )
 }
 
 ## Print LM Information to show the print
-info.lm <- function(x){
-  cat(crayon::bold(nrow(x[[2]])),
+info.lm <- function(x, plain=FALSE, decimals=getOption("digits")) {
+  if (plain == FALSE) {
+    cat(
+      crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format("sucessful models have been tested \n")),
+        format("sucessful models have been tested \n")
+      ),
       crayon::black(
         format("\n"),
-        capture.output(format(x[[2]]))
+        capture.output(format(x[[2]], digits = decimals))
       )
-  )
+    )
+  } else {
+    cat(
+      nrow(x[[2]]),
+      format("sucessful models have been tested \n"),
+      format("\n")
+    )
+    print(x[[2]], digits = decimals)
+  }
 }
 
 ## LMM
-info.lmm <- function(x){
-  cat(crayon::bold(nrow(x[[2]])),
+info.lmm <- function(x, plain=FALSE, decimals=getOption("digits")) {
+  if (plain == FALSE) {
+    cat(
+      crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format("random variables have been tested \n")),
+        format("random variables have been tested \n")
+      ),
       crayon::black(
         format("\n"),
-        capture.output(format(x[[2]]))
+        capture.output(format(x[[2]], digits = decimals))
       )
-  )
+    )
+  } else {
+    cat(
+      nrow(x[[2]]),
+      format("random variables have been tested \n"),
+      format("\n")
+    )
+    print(x[[2]], digits = decimals)
+  }
 }
+
 ## Print GLM Information to show the print
-info.glm <- function(x){
-  cat(crayon::bold(nrow(x[[2]])),
+info.glm <- function(x, plain=FALSE, decimals=getOption("digits")) {
+  if (plain == FALSE) {
+    cat(
+      crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format("sucessful models have been tested and")),
+        format("sucessful models have been tested and")
+      ),
       crayon::bold(nrow(x[[6]][[1]])),
       crayon::black(format("thresholds evaluated \n")),
       crayon::black(
         format("\n"),
-        capture.output(format(x[[2]]))
+        capture.output(format(x[[2]], digits = decimals))
       ),
       format("\n")
-
-  )
+    )
+  } else {
+    cat(
+      nrow(x[[2]]),
+      format("sucessful models have been tested \n"),
+      format("\n")
+    )
+    print(x[[2]], digits = decimals)
+  }
 }
 
 ## Print CART Information to show the print
-info.cart <- function(x){
-  cat(crayon::bold(nrow(x[[2]])),
+info.cart <- function(x, plain=FALSE, decimals=getOption("digits")) {
+  if (plain == FALSE) {
+    cat(
+      crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format("successful models have been tested \n")),
+        format("successful models have been tested \n")
+      ),
       crayon::black(
         format("\n"),
-        capture.output(format(x[[2]]))
+        capture.output(format(x[[2]],digits=decimals))
       )
-  )
+    )
+  } else {
+    cat(
+      nrow(x[[2]]),
+      format("sucessful models have been tested \n"),
+      format("\n")
+    )
+    print(x[[2]],digits=decimals)
+  }
 }
 
 ## Print DA Information to show the print
-info.da <- function(x){
-    cat(crayon::bold(nrow(x[[2]])),
-        crayon::black(
-          format("successful models have been tested \n")),
-        crayon::black(
-          format("\n"),
-          capture.output(format(x[[2]]))
-        )
+info.da <- function(x, plain=FALSE,decimals=getOption("digits")) {
+  if (plain == FALSE) {
+    cat(
+      crayon::bold(nrow(x[[2]])),
+      crayon::black(
+        format("successful models have been tested \n")
+      ),
+      crayon::black(
+        format("\n"),
+        capture.output(format(x[[2]],digits=decimals))
+      )
     )
+  } else {
+    cat(
+      nrow(x[[2]]),
+      format("sucessful models have been tested \n"),
+      format("\n")
+    )
+    print(x[[2]],digits=decimals)
+  }
 }
 
 ## Print SVM Information to show the print
-info.svm <- function(x){
-  cat(crayon::bold(nrow(x[[2]])),
+info.svm <- function(x, plain=FALSE, decimals=getOption("digits")) {
+  if (plain == FALSE) {
+    cat(
+      crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format("successful kernels have been tested \n")),
+        format("successful kernels have been tested \n")
+      ),
       crayon::black(
         format("\n"),
-        capture.output(format(x[[2]]))
+        capture.output(format(x[[2]],digits=decimals))
       )
-  )
+    )
+  } else {
+    cat(
+      nrow(x[[2]]),
+      format("sucessful models have been tested \n"),
+      format("\n")
+    )
+    print(x[[2]],digits=decimals)
+  }
 }
 
 ## Print NN Information to show the print
-info.nn <- function(x){
-  cat(crayon::bold(nrow(x[[2]])),
+info.nn <- function(x, plain=FALSE, decimals=getOption("digits")) {
+  if (plain == FALSE) {
+    cat(
+      crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format(" models have been tested with differents levels of hidden layers \n")),
+        format(" models have been tested with differents levels of hidden layers \n")
+      ),
       crayon::black(
         format("\n"),
-        capture.output(format(x[[2]]))
+        capture.output(format(x[[2]],digits=decimals))
       )
-  )
+    )
+  } else {
+    cat(
+      nrow(x[[2]]),
+      format("sucessful models have been tested \n"),
+      format("\n")
+    )
+   print(x[[2]],digits=decimals)
+  }
 }
-

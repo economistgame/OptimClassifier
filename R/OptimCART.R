@@ -15,8 +15,8 @@
 #' @return An object of class \code{Optim}. See\code{\link{Optim.object}}
 #'
 #'@details  Classification And Regression Tree (CART) are a decision tree learning technique that produces either classification or regression trees, first introduced by
-#'Breiman et al.(1984). Trees used for regression and trees used for classification have some similarities -
-#'but also some differences, such as the procedure used to determine where to split.
+#' Breiman et al.(1984). Trees used for regression and trees used for classification have some similarities -
+#' but also some differences, such as the procedure used to determine where to split.
 
 #' @references Breiman L., Friedman J. H., Olshen R. A., and Stone, C. J. (1984) Classification and Regression Trees. Wadsworth.
 

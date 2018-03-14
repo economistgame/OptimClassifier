@@ -10,15 +10,18 @@
 #' @param seed a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.
 #' @param ... arguments passed to \code{\link[e1071]{svm}}
 #'
-#' @return An object of class \code{Optim}. See\code{\link{Optim.object}}
+#' @return An object of class \code{Optim}. See \code{\link{Optim.object}}
 
 #' @examples
-##' if(interactive()){
+#' if(interactive()){
+#'
 #' ## Load a Dataset
 #' data(AustralianCredit)
+#'
 #' ## Generate a model
 #' modelFit <- Optim.SVM(Y~., AustralianCredit, p = 0.7, seed=2018)
 #' modelFit
+#'
 #' }
 #'
 #' @export
