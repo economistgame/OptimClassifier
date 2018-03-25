@@ -11,6 +11,7 @@ This dataset concerns credit card applications and represent positive and negati
   A data frame with 690 observations on the following 15 variables.
 ## References
 Lichman, M. (2013). UCI machine learning repository.
+
 Quinlan,R. (1987). "Simplifying decision trees", Int J Man-Machine Studies 27, pp. 221-234.
 
 
