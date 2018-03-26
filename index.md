@@ -19,7 +19,7 @@ The next table summarizes a state of package:
 
 | **Documentation** | **Repo Status** | **Build Status** | 
 |:---:|:---:|:---:|
-| [![][docs-img]][docs-url] | [![][CRAN-Version-img]][CRAN-Version-url] [![][MRAN-Version-img]][MRAN-Version-url] |  [![][travis-img]][travis-url]  [![][codecov-img]][codecov-url] | 
+| [![][docs-img]][docs-url] [![][rdrr-img]][rdrr-url] | [![][CRAN-Version-img]][CRAN-Version-url] [![][MRAN-Version-img]][MRAN-Version-url] |  [![][travis-img]][travis-url]  [![][codecov-img]][codecov-url] | 
 
 [docs-img]: https://img.shields.io/badge/docs-latest-blue.svg
 [docs-url]: http://economistgame.github.io/OptimClassifier
@@ -34,8 +34,9 @@ The next table summarizes a state of package:
 [travis-url]: https://travis-ci.org/economistgame/OptimClassifier
 [codecov-img]: https://ci.appveyor.com/api/projects/status/f3h44m7jwr8ms9tf?svg=true
 [codecov-url]: https://ci.appveyor.com/project/economistgame/optimclassifier
-
-
+ 
+[rdrr-img]: https://img.shields.io/badge/rdrr-stable-blue.svg
+[rdrr-url]: https://rdrr.io/cran/OptimClassifier/
 
 
 ## Why in R?
