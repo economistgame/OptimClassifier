@@ -2,7 +2,7 @@
 layout: page
 title: Create the Best Train for Classification Models
 ---
-
+## Why of this package?
 Patterns searching and binary classification in economic and financial data is a large field of research. There are a large part of the data that the target variable is binary. Nowadays, many methodologies are used, this package collects most popular and compare different configuration options for:
 
 <p class="index-method"><button class="index-button LM-button">LM</button> Linear Models (LM)</p>
