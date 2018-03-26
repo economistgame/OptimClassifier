@@ -26,7 +26,7 @@ title: Linear Models
 }
 
 /* The actual popup */
-.popup .popuptext {
+.popup .popuptext .popuptext2 {
     visibility: hidden;
     width: 160px;
     background-color: #555;
