@@ -12,14 +12,7 @@
   {% endif %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    inlineMath: [['$','$']]
-  }
-});
-  </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
