@@ -26,7 +26,23 @@ title: Linear Models
 }
 
 /* The actual popup */
-.popup .popuptext .popuptext2 {
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* The actual popup */
+.popup .popuptext2 {
     visibility: hidden;
     width: 160px;
     background-color: #555;
