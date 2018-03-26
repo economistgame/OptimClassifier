@@ -582,4 +582,6 @@ margin:-100px 0 0; /* negative fixed header height */
     background: grey;
     color: white;
 }
-
+.index-method {
+  margin: 3px 0
+}
