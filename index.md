@@ -13,6 +13,31 @@ Patterns searching and binary classification in economic and financial data is a
 <p class="index-method"><button class="index-button NN-button">NN</button> Neural Networks (NN) </p>
 <p class="index-method"><button class="index-button SVM-button">SVM</button> Support Vector Machines (SVM) </p>
 
+
+
+The next table summarizes a state of package:
+
+| **Documentation** | **Repo Status** | **Build Status** | 
+|:---:|:---:|:---:|
+| [![][docs-img]][docs-url] | [![][CRAN-Version-img]][CRAN-Version-url] [![][MRAN-Version-img]][MRAN-Version-url] |  [![][travis-img]][travis-url]  [![][codecov-img]][codecov-url] | 
+
+[docs-img]: https://img.shields.io/badge/docs-latest-blue.svg
+[docs-url]: http://economistgame.github.io/OptimClassifier
+
+[CRAN-Version-img]: https://www.r-pkg.org/badges/version/OptimClassifier
+[CRAN-Version-url]: https://cran.r-project.org/web/packages/OptimClassifier/
+[MRAN-Version-img]: https://img.shields.io/badge/MRAN-0.1.2-green.svg
+[MRAN-Version-url]: https://mran.microsoft.com/package/OptimClassifier
+
+
+[travis-img]: https://travis-ci.org/economistgame/OptimClassifier.svg?branch=master
+[travis-url]: https://travis-ci.org/economistgame/OptimClassifier
+[codecov-img]: https://ci.appveyor.com/api/projects/status/f3h44m7jwr8ms9tf?svg=true
+[codecov-url]: https://ci.appveyor.com/project/economistgame/optimclassifier
+
+
+
+
 ## Why in R?
 [R](https://www.r-project.org/)  is an environment for statistical analyses and graphics that is rapidly gaining popularity with machine learning scientists. You can see [R-project](https://www.r-project.org/about.html) for one description about R and your ecosystem.
 
