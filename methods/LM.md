@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linear Model
+title: Linear Models
 ---
 ## Description
 
@@ -11,13 +11,5 @@ title: Linear Model
 ## Usage
 
 <div class="row">
-	<div class="col-md-4">
-		<b>Optim.LM</b>(
-	</div>
-	<div class="col-md-4">
-		<b style="color:blue">formula</b>,
-	</div>
-	<div class="col-md-4">
-      		p)
-	</div>
+	<div>Optim.LM(</div> <div>formula, </div> <div>data, </div> <div>p, </div> <div>threshold = NULL, </div> <div>criteria =</div> <div> "success_rate" <br> "error_ti" <br> "error_tii")</div> <div>,</div> <div> seed = NULL, ...) </div>
 </div>	
