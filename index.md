@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OptimClassifier | Create the Best Train for Classification Models
+title: Create the Best Train for Classification Models
 ---
 
 Patterns searching and binary classification in economic and financial data is a large field of research. There are a large part of the data that the target variable is binary. Nowadays, many methodologies are used, this package collects most popular and compare different configuration options for:
