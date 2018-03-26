@@ -574,9 +574,12 @@ margin:-100px 0 0; /* negative fixed header height */
 
 .LMM-button {background-color: #B2FF66;} /* Green 2 */
 .GLM-button {background-color: #33FF99;} /* Green 3 */ 
-.DA-button {background-color: #FFFF66; color: black;} /* Yellow */ 
+.DA-button {background-color: #FFFF66;} /* Yellow */ 
 .CART-button {background-color: #FFB266;} /* Orange */
 .NN-button {background-color: #99CCFF;} /* Blue */
 .SVM-button {background-color: #CC99FF;} /* Violet */
-
+.method-button:hover {
+    background: grey;
+    color: white;
+}
 
