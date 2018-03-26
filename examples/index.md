@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OptimClassifier tutorials
+title:  Tutorials
 ---
 
 <button class="method-button" onClick="location.href='#lm'">LM</button>
