@@ -3,7 +3,7 @@ layout: page
 title: OptimClassifier tutorials
 ---
 
-<a class="method-button" href=#>LM</a>
+<button class="method-button">LM</button>
 <button class="method-button GLM-button">GLM</button>
 <button class="method-button LMM-button">LMM</button>
 <button class="method-button DA-button">DA</button>
