@@ -10,7 +10,6 @@ title: Linear Model
 
 ## Usage
 
-<div class=row>
   <div class="container-fluid">
     <div>
       Optim.LM(
@@ -20,4 +19,3 @@ title: Linear Model
     </div>
     </div>
   
-  </div>
