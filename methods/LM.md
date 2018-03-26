@@ -76,7 +76,7 @@ title: Linear Models
 <div class="popup" onclick="FunctionName()"><b>Optim.LM</b>(
   <span class="popuptext" id="NamePopUp">The function name</span>
 </div>
-<div class="popup" onclick="FunctionName()">formula
+<div class="popup" onclick="FunctionFormula()">formula
   <span class="popuptext" id="FormulaPopUp">The function name</span>
 </div>
 <script>
