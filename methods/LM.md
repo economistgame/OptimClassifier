@@ -69,14 +69,14 @@ title: Linear Models
     border-color: #555 transparent transparent transparent;
 }
 .popup .popuptext2::after {
-    content: "";
+    content: " ";
     position: absolute;
-    top: 0%;
+    bottom: 100%;  /* At the top of the tooltip */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: transparent transparent black transparent;
 }
 /* Toggle this class - hide and show the popup */
 .popup .show {
@@ -104,6 +104,7 @@ title: Linear Models
 <div class="popup" onclick="FunctionFormula()">formula
 	<span class="popuptext2" id="FormulaPopUp">A formula of the form: y ~ x1 + x2 + ...</span>
 </div>
+
 <script>
 // When the user clicks on div, open the popup
 function FunctionName() {
