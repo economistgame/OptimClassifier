@@ -14,7 +14,7 @@ Patterns searching and binary classification in economic and financial data is a
 <p class="index-method"><button class="index-button SVM-button">SVM</button> Support Vector Machines (SVM) </p>
 
 ## Why in R?
-[R is an environment](https://www.r-project.org/) for statistical analyses and graphics that is rapidly gaining popularity with machine learning scientists. You can see [R-project](https://www.r-project.org/about.html) for one description about R and your ecosystem.
+[R](https://www.r-project.org/)  is an environment for statistical analyses and graphics that is rapidly gaining popularity with machine learning scientists. You can see [R-project](https://www.r-project.org/about.html) for one description about R and your ecosystem.
 
 
 
