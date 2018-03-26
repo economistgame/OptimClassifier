@@ -555,3 +555,26 @@ display:block;
 height:100px; /* fixed header height*/
 margin:-100px 0 0; /* negative fixed header height */
 }
+
+
+.method-button {
+    background-color: #66FF66; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.LMM-button {background-color: #B2FF66;} /* Green 2 */
+.GLM-button {background-color: #33FF99;} /* Green 3 */ 
+.DA-button {background-color: #FFFF66; color: black;} /* Yellow */ 
+.CART-button {background-color: #FFB266;} /* Orange */
+.NN-button {background-color: #99CCFF;} /* Blue */
+.SVM-button {background-color: #CC99FF;} /* Violet */
+
+
