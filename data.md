@@ -10,7 +10,7 @@ This dataset concerns credit card applications and represent positive and negati
 ### Dataset information
   A data frame with 690 observations on the following 15 variables.
 ### References
-Lichman, M. (2013). UCI machine learning repository. [Link](http://archive.ics.uci.edu/ml/datasets/statlog+(australian+credit+approval) "UCI linK")
+Lichman, M. (2013). UCI machine learning repository. [Link](http://archive.ics.uci.edu/ml/datasets/statlog+(australian+credit+approval) "Statlog (Australian Credit Approval) Data Set")
 
 Quinlan, R. (1987). <i>"Simplifying decision trees"</i>, Int J Man-Machine Studies 27, pp. 221-234.
 
