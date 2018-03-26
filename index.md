@@ -5,7 +5,7 @@ title: OptimClassifier | Create the Best Train for Classification Models
 
 Patterns searching and binary classification in economic and financial data is a large field of research. There are a large part of the data that the target variable is binary. Nowadays, many methodologies are used, this package collects most popular and compare different configuration options for:
 
-<p class="index-method"><button class="index-button">LM</button> Linear Models (LM)</p>
+<p class="index-method"><button class="index-button LM-button">LM</button> Linear Models (LM)</p>
 <p class="index-method"><button class="index-button GLM-button">GLM</button> Generalized Linear Models (GLM)</p>
 <p class="index-method"><button class="index-button LMM-button">LMM</button> Linear Mixed Models (LMM) </p>
 <p class="index-method"><button class="index-button DA-button">DA</button> Discriminant Analysis (DA) </p>
