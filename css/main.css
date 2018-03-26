@@ -570,13 +570,14 @@ margin:-100px 0 0; /* negative fixed header height */
     cursor: pointer;
     color: black;
 }
-
+.LM-button {  background-color: #66FF66; }/* Green */
 .LMM-button {background-color: #B2FF66;} /* Green 2 */
 .GLM-button {background-color: #33FF99;} /* Green 3 */ 
 .DA-button {background-color: #FFFF66;} /* Yellow */ 
 .CART-button {background-color: #FFB266;} /* Orange */
 .NN-button {background-color: #99CCFF;} /* Blue */
 .SVM-button {background-color: #CC99FF;} /* Violet */
+
 .method-button:hover {
     background: grey;
     color: white;
@@ -585,7 +586,6 @@ margin:-100px 0 0; /* negative fixed header height */
   margin: 3px 0
 }
 .index-button {
-    background-color: #66FF66; /* Green */
     border: none;
     width: 100px;
     padding: 15px 32px;
@@ -594,8 +594,11 @@ margin:-100px 0 0; /* negative fixed header height */
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     color: black;
 }
 
+.index-button:hover {
+    background: grey;
+    color: white;
+}
