@@ -11,7 +11,7 @@ title: OptimClassifier tutorials
 <button class="method-button NN-button" onClick="location.href='#nn'">NN</button>
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
 
-// TODO tutorials for OptimClassifier and R
+In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
 
 ## LM
 
