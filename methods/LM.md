@@ -10,9 +10,6 @@ title: Linear Models
 
 ## Usage
 
-<div class="row">
-	<div class="col">Optim.LM(</div> <div class="col">formula, </div> <div class="col">data, </div><div class="col">p, </div> <div class="col">threshold = NULL, </div> <div class="col">criteria =</div> <div class="col"> "success_rate" <br> "error_ti" <br> "error_tii")</div> <div class="col">,</div> <div class="col">seed = NULL, ...) </div>
-</div>	
 <style>
 /* Popup container - can be anything you want */
 .popup {
