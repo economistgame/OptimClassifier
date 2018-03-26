@@ -52,7 +52,16 @@ title: Linear Models
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-
+.popup .popuptext2::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
 /* Toggle this class - hide and show the popup */
 .popup .show {
     visibility: visible;
