@@ -11,5 +11,5 @@ title: Linear Models
 ## Usage
 
 <div class="row">
-	<div>Optim.LM(</div> <div>formula, </div> <div>data, </div> <div>p, </div> <div>threshold = NULL, </div> <div>criteria =</div> <div> "success_rate" <br> "error_ti" <br> "error_tii")</div> <div>,</div> <div> seed = NULL, ...) </div>
+	<div class="col">Optim.LM(</div> <div class="col">formula, </div> <div class="col">data, </div><div class="col">p, </div> <div class="col">threshold = NULL, </div> <div class="col">criteria =</div> <div class="col"> "success_rate" <br> "error_ti" <br> "error_tii")</div> <div class="col">,</div> <div class="col">seed = NULL, ...) </div>
 </div>	
