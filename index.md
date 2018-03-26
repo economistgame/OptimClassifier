@@ -19,7 +19,7 @@ The next table summarizes a state of package:
 
 | **Documentation** | **Repo Status** | **Build Status** | 
 |:---:|:---:|:---:|
-| [![][docs-img]][docs-url] [![][rdrr-img]][rdrr-url] | [![][CRAN-Version-img]][CRAN-Version-url] [![][MRAN-Version-img]][MRAN-Version-url] |  [![][travis-img]][travis-url]  [![][codecov-img]][codecov-url] | 
+| [![][docs-img]][docs-url] <br> [![][rdrr-img]][rdrr-url] | [![][CRAN-Version-img]][CRAN-Version-url] <br> [![][MRAN-Version-img]][MRAN-Version-url] |  **Linux/Mac** [![][travis-img]][travis-url] <br> **Windows** [![][codecov-img]][codecov-url] | 
 
 [docs-img]: https://img.shields.io/badge/docs-latest-blue.svg
 [docs-url]: http://economistgame.github.io/OptimClassifier
