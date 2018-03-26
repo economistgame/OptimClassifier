@@ -102,7 +102,7 @@ title: Linear Models
   <span class="popuptext" id="NamePopUp">The function name</span>
 </div>
 <div class="popup" onclick="FunctionFormula()">formula
-	<span class="popuptext2" id="FormulaPopUp">A formula of the form </br> y ~ x1 + x2 + ...</span>
+	<span class="popuptext2" id="FormulaPopUp">A formula of the form: y ~ x1 + x2 + ...</span>
 </div>
 <script>
 // When the user clicks on div, open the popup
