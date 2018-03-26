@@ -12,15 +12,12 @@ title: Linear Model
 
 <div class="row">
 	<div class="col-md-4">
-		<h2>HTML</h2>
-		<p>Used for content and structure of web pages.</p>
+		<b>Optim.LM</b>(
 	</div>
 	<div class="col-md-4">
-		<h2>CSS</h2>
-		<p>Defines the design of website elements.</p>
+		<b style="color:blue">formula</b>,
 	</div>
 	<div class="col-md-4">
-		<h2>JavaScript</h2>
-		<p>Can add cool effects to otherwise boring pages.</p>
+      		p)
 	</div>
 </div>	
