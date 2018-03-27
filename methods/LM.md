@@ -109,8 +109,11 @@ title: Linear Models
   <span class="popuptext" id="NamePopUp">The function name</span>
 </div>
 <div class="popup" >
-<button class="usage-button LM-button" onclick="FunctionFormula()">formula</button>
-	<span class="popuptext2" id="FormulaPopUp">A formula of the form: y ~ x1 + x2 + ...</span></div>
+<button class="usage-button LM-button" onclick="FunctionFormula()">formula</button>,
+	<span class="popuptext2" id="FormulaPopUp">A formula of the form: Y ~ X1 + X2 + ...</span></div>
+<div class="popup" >
+<button class="usage-button GLM-button" onclick="FunctionFormula()">data</button>,
+	<span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 <script>
 // When the user clicks on div, open the popup
 function FunctionName() {
