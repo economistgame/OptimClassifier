@@ -98,10 +98,8 @@ title: Linear Models
 <div class="popup" onclick="FunctionName()"><b>Optim.LM</b>(
   <span class="popuptext" id="NamePopUp">The function name</span>
 </div>
-<div class="popup" onclick="FunctionFormula()">formula
+<button class="popup index-button LM-button" onclick="FunctionFormula()">formula</button>
 	<span class="popuptext2" id="FormulaPopUp">A formula of the form: y ~ x1 + x2 + ...</span>
-</div>
-
 <script>
 // When the user clicks on div, open the popup
 function FunctionName() {
