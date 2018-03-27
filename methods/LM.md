@@ -149,10 +149,6 @@ title: Linear Models
 <div class="popup" >
 <button class="usage-button CART-button" onclick="FunctionFormula()">...</button>)
 <span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
-<div class="container">
-    <br>
-    <a href data-toggle="tooltip" data-placement="bottom" title="Tooltip on right">Tooltip</a>
-</div>
 <script>
 	$('[data-toggle="tooltip"]').tooltip()
 // When the user clicks on div, open the popup
