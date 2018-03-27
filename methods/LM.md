@@ -113,7 +113,7 @@ title: Linear Models
 	<div class="popuptext2" id="FormulaPopUp">A formula of the form: <br> Y ~ X1 + X2 + ...</div></div>
 
 <div class="popup" >
-<button class="usage-button GLM-button" onclick="FunctionFormula()">data</button>,
+<button class="usage-button GLM-button" onclick="FunctionData()">data</button>,
 	<span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 
 <div class="popup" >
@@ -139,6 +139,18 @@ function FunctionName() {
     popup.classList.toggle("show");
 }
 	
+function FunctionFormula() {
+    var popup = document.getElementById("FormulaPopUp");
+    popup.classList.toggle("show");
+}
+function FunctionData() {
+    var popup = document.getElementById("DataPopUp");
+    popup.classList.toggle("show");
+}
+function FunctionFormula() {
+    var popup = document.getElementById("FormulaPopUp");
+    popup.classList.toggle("show");
+}
 function FunctionFormula() {
     var popup = document.getElementById("FormulaPopUp");
     popup.classList.toggle("show");
