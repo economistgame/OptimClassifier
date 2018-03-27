@@ -130,7 +130,7 @@ title: Linear Models
 <button class="usage-button SVM-button" onclick="FunctionFormula()">seed</button>,
 <span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 <div class="popup" >
-<button class="usage-button CART-button" onclick="FunctionFormula()">...</button>,)
+<button class="usage-button CART-button" onclick="FunctionFormula()">...</button>)
 <span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 <script>
 // When the user clicks on div, open the popup
