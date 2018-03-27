@@ -11,6 +11,16 @@ title: Linear Models
 ## Usage
 
 <style>
+.usage-button {
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
 /* Popup container - can be anything you want */
 .popup {
     position: relative;
@@ -99,7 +109,7 @@ title: Linear Models
   <span class="popuptext" id="NamePopUp">The function name</span>
 </div>
 <div class="popup" >
-<button class="index-button LM-button" onclick="FunctionFormula()">formula</button>
+<button class="usage-button LM-button" onclick="FunctionFormula()">formula</button>
 	<span class="popuptext2" id="FormulaPopUp">A formula of the form: y ~ x1 + x2 + ...</span></div>
 <script>
 // When the user clicks on div, open the popup
