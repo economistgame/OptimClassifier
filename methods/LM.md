@@ -135,7 +135,7 @@ title: Linear Models
 
 <div class="popup" >
 <button class="usage-button LMM-button" onclick="FunctionP()">p</button>,
-<span class="popuptext2" id="pPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<div class="popuptext2" id="pPopUp">A percentage of training elements <br> Must be for example 0.3 or 30</div></div>
 
 <div class="popup" >
 <button class="usage-button DA-button" onclick="ThresholdFormula()">threshold</button>,
