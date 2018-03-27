@@ -117,15 +117,15 @@ title: Linear Models
 	<span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 
 <div class="popup" >
-<button class="usage-button LMM-button" onclick="FunctionFormula()">p</button>,
-<span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<button class="usage-button LMM-button" onclick="FunctionP()">p</button>,
+<span class="popuptext2" id="pPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 
 <div class="popup" >
-<button class="usage-button DA-button" onclick="FunctionFormula()">threshold</button>,
-<span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<button class="usage-button DA-button" onclick="ThresholdFormula()">threshold</button>,
+<span class="popuptext" id="ThresholdPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 <div class="popup" >
-<button class="usage-button NN-button" onclick="FunctionFormula()">criteria</button>,
-<span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<button class="usage-button NN-button" onclick="criteriaFormula()">criteria</button>,
+<span class="popuptext2" id="criteriaPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 <div class="popup" >
 <button class="usage-button SVM-button" onclick="FunctionFormula()">seed</button>,
 <span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
@@ -147,12 +147,12 @@ function FunctionData() {
     var popup = document.getElementById("DataPopUp");
     popup.classList.toggle("show");
 }
-function FunctionFormula() {
-    var popup = document.getElementById("FormulaPopUp");
+function FunctionP() {
+    var popup = document.getElementById("pPopUp");
     popup.classList.toggle("show");
 }
-function FunctionFormula() {
-    var popup = document.getElementById("FormulaPopUp");
+function ThresholdFormula() {
+    var popup = document.getElementById("ThresholdPopUp");
     popup.classList.toggle("show");
 }
 </script>
