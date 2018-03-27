@@ -111,9 +111,27 @@ title: Linear Models
 <div class="popup" >
 <button class="usage-button LM-button" onclick="FunctionFormula()">formula</button>,
 	<span class="popuptext2" id="FormulaPopUp">A formula of the form: Y ~ X1 + X2 + ...</span></div>
+
 <div class="popup" >
 <button class="usage-button GLM-button" onclick="FunctionFormula()">data</button>,
 	<span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+
+<div class="popup" >
+<button class="usage-button LMM-button" onclick="FunctionFormula()">p</button>,
+<span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+
+<div class="popup" >
+<button class="usage-button DA-button" onclick="FunctionFormula()">threshold</button>,
+<span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<div class="popup" >
+<button class="usage-button NN-button" onclick="FunctionFormula()">criteria</button>,
+<span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<div class="popup" >
+<button class="usage-button SVM-button" onclick="FunctionFormula()">seed</button>,
+<span class="popuptext" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<div class="popup" >
+<button class="usage-button CART-button" onclick="FunctionFormula()">...</button>,)
+<span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 <script>
 // When the user clicks on div, open the popup
 function FunctionName() {
