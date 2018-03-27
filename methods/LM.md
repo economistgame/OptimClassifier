@@ -110,7 +110,7 @@ title: Linear Models
 </div>
 <div class="popup" >
 <button class="usage-button LM-button" onclick="FunctionFormula()">formula</button>,
-	<div class="popuptext2" id="FormulaPopUp">A formula of the form: Y ~ X1 + X2 + ...</div></div>
+	<div class="popuptext2" id="FormulaPopUp">A formula of the form: <br> Y ~ X1 + X2 + ...</div></div>
 
 <div class="popup" >
 <button class="usage-button GLM-button" onclick="FunctionFormula()">data</button>,
