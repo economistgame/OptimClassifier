@@ -49,7 +49,7 @@ title: Linear Models
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
+    top: 125%;
     left: 50%;
     margin-left: -80px;
 }
