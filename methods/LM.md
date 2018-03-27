@@ -135,7 +135,7 @@ title: Linear Models
 
 <div class="popup" >
 <button class="usage-button LMM-button" onclick="FunctionP()">p</button>,
-<div class="popuptext2" id="pPopUp">A percentage of training elements <br> Must be for example 0.3 or 30</div></div>
+<div class="popuptext2" id="pPopUp">A percentage of training elements <br> Must be for example <b>0.3</b> or <b>30</b></div></div>
 
 <div class="popup" >
 <button class="usage-button DA-button" onclick="ThresholdFormula()">threshold</button>,
@@ -150,7 +150,6 @@ title: Linear Models
 <button class="usage-button CART-button" onclick="FunctionFormula()">...</button>)
 <span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
 <script>
-	$('[data-toggle="tooltip"]').tooltip()
 // When the user clicks on div, open the popup
 function FunctionName() {
     var popup = document.getElementById("NamePopUp");
