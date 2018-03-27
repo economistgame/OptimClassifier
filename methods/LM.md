@@ -102,6 +102,23 @@ title: Linear Models
     from {opacity: 0;}
     to {opacity:1 ;}
 }
+
+
+.tooltip-inner {
+    background-color: #00cc00;
+}
+.tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: #00cc00 !important;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+    border-right-color: #00cc00 !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-right-color: #00cc00 !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+    border-right-color: #00cc00 !important;
+}
 </style>
 
 
@@ -132,7 +149,12 @@ title: Linear Models
 <div class="popup" >
 <button class="usage-button CART-button" onclick="FunctionFormula()">...</button>)
 <span class="popuptext2" id="DataPopUp">Data frame from which variables specified in formula are preferentially to be taken.</span></div>
+<div class="container">
+    <br>
+    <a href data-toggle="tooltip" data-placement="bottom" title="Tooltip on right">Tooltip</a>
+</div>
 <script>
+	$('[data-toggle="tooltip"]').tooltip()
 // When the user clicks on div, open the popup
 function FunctionName() {
     var popup = document.getElementById("NamePopUp");
