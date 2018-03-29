@@ -55,7 +55,51 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
       Model      rmse threshold success_rate   ti_error tii_error 
   1      LM 0.3425880       1.6       0.8413     0.0192 0.1394231 
   2 SQRT.LM 0.4480197       1.2       0.8317     0.0144 0.1538462 
-  3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000</code></pre>
+  3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000
+  
+  <table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Model </th>
+   <th style="text-align:right;"> rmse </th>
+   <th style="text-align:right;"> threshold </th>
+   <th style="text-align:right;"> success_rate </th>
+   <th style="text-align:right;"> ti_error </th>
+   <th style="text-align:right;"> tii_error </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> LM </td>
+   <td style="text-align:right;"> 0.3425880 </td>
+   <td style="text-align:right;"> 1.6 </td>
+   <td style="text-align:right;"> 0.8413462 </td>
+   <td style="text-align:right;"> 0.0192308 </td>
+   <td style="text-align:right;"> 0.1394231 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SQRT.LM </td>
+   <td style="text-align:right;"> 0.4480197 </td>
+   <td style="text-align:right;"> 1.2 </td>
+   <td style="text-align:right;"> 0.8317308 </td>
+   <td style="text-align:right;"> 0.0144231 </td>
+   <td style="text-align:right;"> 0.1538462 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LOG.LM </td>
+   <td style="text-align:right;"> 1.1473270 </td>
+   <td style="text-align:right;"> 1.0 </td>
+   <td style="text-align:right;"> 0.5961538 </td>
+   <td style="text-align:right;"> 0.4038462 </td>
+   <td style="text-align:right;"> 0.0000000 </td>
+  </tr>
+</tbody>
+</table>
+  
+  
+  
+  
+  </code></pre>
 <p>Note</p>
 <pre class="r"><code>summary(linearcreditscoring)</code></pre>
 <pre><code>## 
