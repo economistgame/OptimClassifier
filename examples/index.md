@@ -42,8 +42,9 @@ First step charging the dataset and package
 data(<span class="hljs-string">"AustralianCredit"</span>)
 <span class="hljs-comment"># Let's go with the model </span> 
 <span class="hljs-literal">linearcreditscoring</span> &lt;- <span class="hljs-keyword">Optim.LM</span>(<span class="hljs-literal">Y~.</span>, <span class="hljs-literal">AustralianCredit</span>, <span class="hljs-literal">p</span> = <span class="hljs-number">0.7</span>, <span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)</code></pre>
-<button class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
+<button style="align:right" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
+
 \\TODO warning preselected
 <pre><code>## Warning: Thresholds' criteria not selected. The success rate is defined as the default. 
 ## </code></pre>
