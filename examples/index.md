@@ -41,7 +41,7 @@ First step charging the dataset and package
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
 data(<span class="hljs-string">"AustralianCredit"</span>)</code></pre>
 
-<pre class="r"><code>linearcreditscoring &lt;- Optim.LM(Y~., AustralianCredit, p = <span class="hljs-number">0.7</span>, seed=<span class="hljs-number">2018</span>)</code></pre>
+<pre class="r"><code>linearcreditscoring &lt;- <span class="hljs-keyword">Optim.LM</span>(Y~., AustralianCredit, p = <span class="hljs-number">0.7</span>, seed=<span class="hljs-number">2018</span>)</code></pre>
 
 \\TODO warning preselected
 <pre><code>## Warning: Thresholds' criteria not selected. The success rate is defined as the default. 
