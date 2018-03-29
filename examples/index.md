@@ -53,9 +53,9 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
  <b>3</b> sucessful models have been tested 
   <br>
       Model      rmse threshold success_rate   ti_error tii_error 
-  1      LM 0.3425880       1.6    0.8413462 0.01923077 0.1394231 
-  2 SQRT.LM 0.4480197       1.2    0.8317308 0.01442308 0.1538462 
-  3  LOG.LM 1.1473270       1.0    0.5961538 0.40384615 0.0000000</code></pre>
+  1      LM 0.3425880       1.6       0.8413     0.0192 0.1394231 
+  2 SQRT.LM 0.4480197       1.2       0.8317     0.0144 0.1538462 
+  3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000</code></pre>
 <p>Note</p>
 <pre class="r"><code>summary(linearcreditscoring)</code></pre>
 <pre><code>## 
