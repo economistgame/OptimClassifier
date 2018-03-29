@@ -51,7 +51,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
 <font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
  <b>3</b> sucessful models have been tested 
-  
+  <br>
       Model      rmse threshold success_rate   ti_error tii_error 
   1      LM 0.3425880       1.6    0.8413462 0.01923077 0.1394231 
   2 SQRT.LM 0.4480197       1.2    0.8317308 0.01442308 0.1538462 
