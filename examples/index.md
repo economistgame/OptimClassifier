@@ -60,6 +60,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   <table>
  <thead>
   <tr>
+   <th style="text-align:left;">   </th>
    <th style="text-align:left;"> Model </th>
    <th style="text-align:right;"> rmse </th>
    <th style="text-align:right;"> threshold </th>
@@ -70,28 +71,31 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
  </thead>
 <tbody>
   <tr>
+   <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> LM </td>
-   <td style="text-align:right;"> 0.3425880 </td>
+   <td style="text-align:right;"> 0.3426 </td>
    <td style="text-align:right;"> 1.6 </td>
-   <td style="text-align:right;"> 0.8413462 </td>
-   <td style="text-align:right;"> 0.0192308 </td>
-   <td style="text-align:right;"> 0.1394231 </td>
+   <td style="text-align:right;"> 0.8413 </td>
+   <td style="text-align:right;"> 0.0192 </td>
+   <td style="text-align:right;"> 0.1394 </td>
   </tr>
   <tr>
+   <td style="text-align:left;"> 2 </td>
    <td style="text-align:left;"> SQRT.LM </td>
-   <td style="text-align:right;"> 0.4480197 </td>
+   <td style="text-align:right;"> 0.4480 </td>
    <td style="text-align:right;"> 1.2 </td>
-   <td style="text-align:right;"> 0.8317308 </td>
-   <td style="text-align:right;"> 0.0144231 </td>
-   <td style="text-align:right;"> 0.1538462 </td>
+   <td style="text-align:right;"> 0.8317 </td>
+   <td style="text-align:right;"> 0.0144 </td>
+   <td style="text-align:right;"> 0.1538 </td>
   </tr>
   <tr>
+   <td style="text-align:left;"> 3 </td>
    <td style="text-align:left;"> LOG.LM </td>
-   <td style="text-align:right;"> 1.1473270 </td>
+   <td style="text-align:right;"> 1.1473 </td>
    <td style="text-align:right;"> 1.0 </td>
-   <td style="text-align:right;"> 0.5961538 </td>
-   <td style="text-align:right;"> 0.4038462 </td>
-   <td style="text-align:right;"> 0.0000000 </td>
+   <td style="text-align:right;"> 0.5961 </td>
+   <td style="text-align:right;"> 0.4038 </td>
+   <td style="text-align:right;"> 0.0000 </td>
   </tr>
 </tbody>
 </table>
