@@ -14,16 +14,19 @@ title:  Tutorials
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
 
 ## LM
+This section is in construction
 
-
+First step charging the dataset and package
 <pre class="r"><code>library(OptimClassifier)
 data(&quot;AustralianCredit&quot;)</code></pre>
-</div>
-<div id="including-plots" class="section level2">
+
+Next step is launch
 <pre class="r"><code>linearcreditscoring &lt;- Optim.LM(Y~., AustralianCredit, p = 0.7, seed=2018)</code></pre>
+
+\\TODO warning preselected
 <pre><code>## Warning: Thresholds' criteria not selected. The success rate is defined as the default. 
 ## </code></pre>
-<p>Note</p>
+\\make Result format
 <pre class="r"><code>print(linearcreditscoring)</code></pre>
 <pre><code>## 3 sucessful models have been tested 
 ##  
