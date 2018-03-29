@@ -104,7 +104,6 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </table>
 Let's see the best model
 <pre class="r"><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)
-</pre>
 <pre><code>
  Call:
  stats::lm(formula = ModelsTested$train_formula[[i]], data = training, 
@@ -157,8 +156,6 @@ Let's see the best model
  Residual standard error: 0.3136 on 447 degrees of freedom
  Multiple R-squared:  0.6332, Adjusted R-squared:  0.6053 
  F-statistic:  22.7 on 34 and 447 DF,  p-value: &lt; 2.2e-16</code></pre>
-</div>
-
 
 ## GLM
 
