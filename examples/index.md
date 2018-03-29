@@ -29,7 +29,7 @@ data(&quot;AustralianCredit&quot;)</code></pre>
 ## </code></pre>
 \\make Result format
 <pre class="r"><code>print(linearcreditscoring)</code></pre>
-<pre><code>## 3 sucessful models have been tested 
+<pre><code>## <b>3</b> sucessful models have been tested 
 ##  
 ##      Model      rmse threshold success_rate   ti_error tii_error 
 ##  1      LM 0.3425880       1.6    0.8413462 0.01923077 0.1394231 
