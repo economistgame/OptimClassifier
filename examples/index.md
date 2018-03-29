@@ -36,9 +36,9 @@ color: #d14;
 </style>
 
 First step charging the dataset and package
-<pre class="r"><code># Load the package
+<pre class="r"><code><span class="hljs-comment"># Load the package </span>
 <span class="hljs-keyword">library</span>(OptimClassifier)
-# Load the dataset, <i>AustralianCredit</i> in this example 
+<span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
 data(<span class="hljs-string">"AustralianCredit"</span>)</code></pre>
 
 <pre class="r"><code>linearcreditscoring &lt;- Optim.LM(Y~., AustralianCredit, p = 0.7, seed=2018)</code></pre>
