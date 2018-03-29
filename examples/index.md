@@ -2,6 +2,8 @@
 layout: page
 title:  Tutorials
 ---
+<i class="fa fa-exclamation-triangle"></i>
+This section is still under construction. Sorry for the inconvenience
 
 <button class="method-button" onClick="location.href='#lm'">LM</button>
 <button class="method-button GLM-button" onClick="location.href='#glm'">GLM</button>
@@ -14,7 +16,9 @@ title:  Tutorials
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
 
 ## LM
-This section is in construction
+<i class="fa fa-exclamation-triangle"></i>
+This section is still under construction. Sorry for the inconvenience
+
 <style>
 .hljs-literal {
 color: #990073;
