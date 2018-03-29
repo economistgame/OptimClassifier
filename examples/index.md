@@ -16,8 +16,8 @@ In general, OptimClassifier functions have an intuitive syntax, although some ex
 ## LM
 
 
-<pre class="r"><code>library(OptimClassifier)</code></pre>
-<pre class="r"><code>data(&quot;AustralianCredit&quot;)</code></pre>
+<pre class="r"><code>library(OptimClassifier)
+data(&quot;AustralianCredit&quot;)</code></pre>
 </div>
 <div id="including-plots" class="section level2">
 <pre class="r"><code>linearcreditscoring &lt;- Optim.LM(Y~., AustralianCredit, p = 0.7, seed=2018)</code></pre>
