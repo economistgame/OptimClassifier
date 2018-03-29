@@ -50,7 +50,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
 <font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
- <b>3</b> sucessful models have been tested 
+ <b>3</b> successful models have been tested 
   <br>
       Model      rmse threshold success_rate   ti_error tii_error 
   1      LM 0.3425880       1.6       0.8413     0.0192 0.1394231 
@@ -59,7 +59,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   
    
   </code></pre>
-  
+  We can see the results in the table for 3 transformation of response variable
   <table>
  <thead>
   <tr>
@@ -102,8 +102,10 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   </tr>
 </tbody>
 </table>
-<pre class="r"><code>summary(linearcreditscoring)</code></pre>
-<pre><code>## 
+Let's see the best model
+<pre class="r"><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)
+</pre>
+<pre><code>
  Call:
  stats::lm(formula = ModelsTested$train_formula[[i]], data = training, 
      model = FALSE, x = FALSE, y = FALSE)
