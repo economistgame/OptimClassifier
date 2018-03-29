@@ -41,20 +41,21 @@ First step charging the dataset and package
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
 data(<span class="hljs-string">"AustralianCredit"</span>)
 <span class="hljs-comment"># Let's go with the model </span> 
-<span class="hljs-literal">linearcreditscoring</span> &lt;- <span class="hljs-keyword">Optim.LM</span>(<span class="hljs-literal">Y~.</span>, <span class="hljs-literal">AustralianCredit</span>, <span class="hljs-literal">p</span> = <span class="hljs-number">0.7</span>, <span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)</code></pre>
+<span class="hljs-literal">linearcreditscoring</span> &lt;- <span class="hljs-keyword">Optim.LM</span>(<span class="hljs-literal">Y~.</span>, <span class="hljs-literal">AustralianCredit</span>, <span class="hljs-literal">p</span> = <span class="hljs-number">0.7</span>, <span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)
+
+<span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
+</code></pre>
 <button style="width:100%" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
 
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
 <font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
-
-<span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
-<pre><code>## <b>3</b> sucessful models have been tested 
-##  
-##      Model      rmse threshold success_rate   ti_error tii_error 
-##  1      LM 0.3425880       1.6    0.8413462 0.01923077 0.1394231 
-##  2 SQRT.LM 0.4480197       1.2    0.8317308 0.01442308 0.1538462 
-##  3  LOG.LM 1.1473270       1.0    0.5961538 0.40384615 0.0000000</code></pre>
+ <b>3</b> sucessful models have been tested 
+  
+      Model      rmse threshold success_rate   ti_error tii_error 
+  1      LM 0.3425880       1.6    0.8413462 0.01923077 0.1394231 
+  2 SQRT.LM 0.4480197       1.2    0.8317308 0.01442308 0.1538462 
+  3  LOG.LM 1.1473270       1.0    0.5961538 0.40384615 0.0000000</code></pre>
 <p>Note</p>
 <pre class="r"><code>summary(linearcreditscoring)</code></pre>
 <pre><code>## 
