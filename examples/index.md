@@ -39,9 +39,9 @@ First step charging the dataset and package
 <pre class="r"><code><span class="hljs-comment"># Load the package </span>
 <span class="hljs-keyword">library</span>(OptimClassifier)
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
-data(<span class="hljs-string">"AustralianCredit"</span>)</code></pre>
-
-<pre class="r"><code><span class="hljs-literal">linearcreditscoring</span> &lt;- <span class="hljs-keyword">Optim.LM</span>(<span class="hljs-literal">Y~.</span>, <span class="hljs-literal">AustralianCredit</span>, <span class="hljs-literal">p</span> = <span class="hljs-number">0.7</span>, <span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)</code></pre>
+data(<span class="hljs-string">"AustralianCredit"</span>)
+<span class="hljs-comment"># Let's go with the model </span> 
+<span class="hljs-literal">linearcreditscoring</span> &lt;- <span class="hljs-keyword">Optim.LM</span>(<span class="hljs-literal">Y~.</span>, <span class="hljs-literal">AustralianCredit</span>, <span class="hljs-literal">p</span> = <span class="hljs-number">0.7</span>, <span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)</code></pre>
 
 \\TODO warning preselected
 <pre><code>## Warning: Thresholds' criteria not selected. The success rate is defined as the default. 
