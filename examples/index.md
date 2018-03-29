@@ -46,7 +46,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </button>
 
 \\TODO warning preselected
-<pre><code>## Warning: Thresholds' criteria not selected. The success rate is defined as the default. 
+<pre><code><font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
 ## </code></pre>
 \\make Result format
 <pre class="r"><code>print(linearcreditscoring)</code></pre>
