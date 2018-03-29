@@ -45,11 +45,10 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 <button style="width:100%" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
 
-\\TODO warning preselected
-<pre><code><font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
-## </code></pre>
-\\make Result format
-<pre class="r"><code>print(linearcreditscoring)</code></pre>
+<pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
+<font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
+
+<span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
 <pre><code>## <b>3</b> sucessful models have been tested 
 ##  
 ##      Model      rmse threshold success_rate   ti_error tii_error 
