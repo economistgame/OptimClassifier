@@ -43,7 +43,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 <span class="hljs-comment"># Let's go with the model </span> 
 <span class="hljs-literal">linearcreditscoring</span> &lt;- <span class="hljs-keyword">Optim.LM</span>(<span class="hljs-literal">Y~.</span>, <span class="hljs-literal">AustralianCredit</span>, <span class="hljs-literal">p</span> = <span class="hljs-number">0.7</span>, <span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)
 
-<span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
+<span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)
 </code></pre>
 <button style="width:100%" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
