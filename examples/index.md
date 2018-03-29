@@ -15,6 +15,25 @@ In general, OptimClassifier functions have an intuitive syntax, although some ex
 
 ## LM
 This section is in construction
+<style>
+.hljs-literal {
+color: #990073;
+}
+.hljs-number {
+color: #099;
+}
+.hljs-comment {
+color: #998;
+font-style: italic;
+}
+.hljs-keyword {
+color: #900;
+font-weight: bold;
+}
+.hljs-string {
+color: #d14;
+}
+  </style>
 
 First step charging the dataset and package
 <pre class="r"><code># Load the package
