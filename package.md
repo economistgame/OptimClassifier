@@ -15,10 +15,10 @@ title: The Package
 <br>
   <b> Authors:</b><br>
 Agustín Pérez-Martín <a href="https://orcid.org/0000-0003-4994-3176"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a> <br>
- <p>Agustín Pérez-Torregrosa <a href="https://orcid.org/0000-0001-5658-4795"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>, <br>
+Agustín Pérez-Torregrosa <a href="https://orcid.org/0000-0001-5658-4795"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>, <br>
    Marta Vaca-Lamata <a href="https://orcid.org/0000-0001-8496-5579"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>,<br> 
    Antonio José Verdú-Jover <a href="https://orcid.org/0000-0002-6201-7196"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>
-   <br> <b> License:</b></p>
+   <br> <b> License:</b>
   <img alt="GPL 3" src="https://www.gnu.org/graphics/gplv3-127x51.png">
 </div>
 
