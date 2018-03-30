@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OptimClassifier Package
+title: Package
 ---
 
-// TODO information for OptimClassifier package
+<img alt="Dependencies Graph" src=https://cran.microsoft.com/packagedata/graphs/OptimClassifier.png">
