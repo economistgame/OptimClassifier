@@ -12,7 +12,6 @@ title: The Package
 <div class="col-md-5">
   <p><b> Maintainer:</b> <br>
     <a href="mailto:agustin.perez01@goumh.umh.es">Agustín Pérez-Torregrosa</a></p>
-<br>
   <p><b> Authors:</b><br>
 Agustín Pérez-Martín <a href="https://orcid.org/0000-0003-4994-3176"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a> <br>
 Agustín Pérez-Torregrosa <a href="https://orcid.org/0000-0001-5658-4795"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>, <br>
