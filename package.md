@@ -11,13 +11,13 @@ title: The Package
 
 <div class="col-md-5">
   <b> Maintainer:</b> <br>
-  <a href="mailto:agustin.perez01@goumh.umh.es">Agustín Pérez-Torregrosa</a>
-<br>
-  <b> Authors:</b><br>
-  Agustín Pérez-Martín <a href="https://orcid.org/0000-0003-4994-3176"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a> , <br>
-  Agustín Pérez-Torregrosa <a href="https://orcid.org/0000-0001-5658-4795"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>, <br>
-  Marta Vaca-Lamata <a href="https://orcid.org/0000-0001-8496-5579"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>, <br>
-  Antonio José Verdú-Jover <a href="https://orcid.org/0000-0002-6201-7196"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>
+  <p><a href="mailto:agustin.perez01@goumh.umh.es">Agustín Pérez-Torregrosa</a>
+</p>
+ <p> <b> Authors:</b></p>
+ <p>Agustín Pérez-Martín <a href="https://orcid.org/0000-0003-4994-3176"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a> , </p>
+ <p>Agustín Pérez-Torregrosa <a href="https://orcid.org/0000-0001-5658-4795"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>, </p>
+  <p>Marta Vaca-Lamata <a href="https://orcid.org/0000-0001-8496-5579"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a>, </p>
+  <p>Antonio José Verdú-Jover <a href="https://orcid.org/0000-0002-6201-7196"> <img style="width:10px" alt="ORCID ICON" src="https://cran.r-project.org/web/orcid.svg"></a></p>
 
 </div>
 
