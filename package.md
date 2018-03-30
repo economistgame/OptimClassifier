@@ -21,4 +21,6 @@ Agustín Pérez-Torregrosa <a href="https://orcid.org/0000-0001-5658-4795"> <img
   <img alt="GPL 3" src="https://www.gnu.org/graphics/gplv3-127x51.png">
 </div>
 
+### Dependencies Graph 
+
 <img alt="Dependencies Graph" src="https://cran.microsoft.com/packagedata/graphs/OptimClassifier.png">
