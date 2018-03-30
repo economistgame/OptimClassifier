@@ -160,7 +160,11 @@ img {
 }
 
 .navbar-custom.top-nav-short .avatar-container{
-  opacity: 0;
+  opacity: 1;
+}
+.top-nav-short img.avatar-img {
+  max-width: 50%;
+  
 }
 
 .navbar-custom.top-nav-expanded .avatar-container  {
