@@ -13,13 +13,9 @@ This section is still under construction. Sorry for the inconvenience
 <button class="method-button NN-button" onClick="location.href='#nn'">NN</button>
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
 <script>
-function LMResults() {
-    var x = document.getElementById("LMResults");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+$("#LM-1").click(function(){
+    $("#LMResults").toggle();
+});
 }
 </script>
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
@@ -61,7 +57,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)
 </code></pre>
-<button style="width:100%;margin-top: 0px;" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
+<button id="LM-1" style="width:100%;margin-top: 0px;" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
 <div id="LMResults">
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
