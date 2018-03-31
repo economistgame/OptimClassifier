@@ -37,10 +37,13 @@ font-weight: bold;
 .hljs-string {
 color: #d14;
 }
+ .codeFragment {
+    margin-bottom: 0px;
+}
 </style>
 
 First step charging the dataset and package
-<pre class="r"><code><span class="hljs-comment"># Load the package </span>
+<pre class="r codeFragment"><code><span class="hljs-comment"># Load the package </span>
 <span class="hljs-keyword">library</span>(OptimClassifier)
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
 data(<span class="hljs-string">"AustralianCredit"</span>)
@@ -107,7 +110,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </tbody>
 </table>
 Let's see the best model
-<pre class="r"><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
+<pre class="r codeFragment" ><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
 
 <pre><code>
  Call:
