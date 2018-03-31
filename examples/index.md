@@ -19,7 +19,6 @@ $("#LM-1").click(function(){
 });
     });
 
-}
 </script>
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
 
