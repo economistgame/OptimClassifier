@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: homepage
 title: Create the Best Train for Classification Models
 ---
 ## Why of this package?
