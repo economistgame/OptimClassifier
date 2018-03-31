@@ -17,6 +17,11 @@ $(document).ready(function(){
 $("#LM-1").click(function(){
     $("#LMResults").toggle();
 });});
+    
+ function LMResults() {
+    var element = document.getElementById("LMResults");
+    element.classList.toggle("invisible");
+}
 </script>
 
 
