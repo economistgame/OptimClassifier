@@ -20,6 +20,8 @@ Agustín Pérez-Torregrosa <a href="https://orcid.org/0000-0001-5658-4795"> <img
    <br> <b> License:</b>
   <img alt="GPL 3" src="https://www.gnu.org/graphics/gplv3-127x51.png">
 </div>
+</div>
+
 
 ### Dependencies Graph 
 
