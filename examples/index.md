@@ -13,12 +13,7 @@ This section is still under construction. Sorry for the inconvenience
 <button class="method-button NN-button" onClick="location.href='#nn'">NN</button>
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
 
-<script> function LMResults() {var element = document.getElementById("LMResults"); element.classList.toggle("hidden")};
-
-$(document).ready(function(){
-$("#LM-1").click(function(){
-    $("#LMResults").toggle();
-});});</script>
+<script> function LMResults() {var element = document.getElementById("LMResults"); element.classList.toggle("hidden")};</script>
 
 
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
