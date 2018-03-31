@@ -52,7 +52,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)
 </code></pre>
-<button style="width:100%" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
+<button style="width:100% margin-top: 0px" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
 
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
