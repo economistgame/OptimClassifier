@@ -48,6 +48,9 @@ color: #d14;
  .codeFragment {
     margin-bottom: 0px;
 }
+     .buttonFragment {
+    margin-top: 0px;
+}
 </style>
 
 First step charging the dataset and package
@@ -60,7 +63,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)
 </code></pre>
-<p class="codeFragment"><button id="LM-1" style="width:100%;margin-top: 0px;" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
+<p class="buttonFragment"><button id="LM-1" style="width:100%;margin-top: 0px;" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button></p>
 <div id="LMResults">
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
