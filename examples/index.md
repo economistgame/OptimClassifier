@@ -13,11 +13,10 @@ This section is still under construction. Sorry for the inconvenience
 <button class="method-button NN-button" onClick="location.href='#nn'">NN</button>
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
 <script>
-$(document).ready(function({
-$("#LM-1").click(function({
+$(document).ready(function(){
+$("#LM-1").click(function(){
     $("#LMResults").toggle();
-});
-    });
+});});
 </script>
 
 
