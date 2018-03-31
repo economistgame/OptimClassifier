@@ -182,7 +182,7 @@ Let's see the best model
 
 ## GLM
 First step charging the dataset and package
-<pre class="r"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
+<pre class="r codeFragment"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
 <span class="hljs-keyword">library</span>(OptimClassifier)
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
 data(<span class="hljs-string">"AustralianCredit"</span>)
@@ -191,7 +191,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <span class="hljs-keyword">print</span>(<span class="hljs-literal">creditscoring</span>)
 </code></pre>
-<button style="width:100%" class="method-button" onClick="location.href='#glm'">Run <i class="fa fa-angle-double-right"></i>
+<button style="width:100%" class="method-button buttonFragment" onClick="location.href='#glm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
 // TODO tutorials for Optim.GLM and R
 
