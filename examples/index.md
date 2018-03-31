@@ -12,7 +12,16 @@ This section is still under construction. Sorry for the inconvenience
 <button class="method-button CART-button" onClick="location.href='#cart'">CART</button>
 <button class="method-button NN-button" onClick="location.href='#nn'">NN</button>
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
-
+<script>
+function LMResults() {
+    var x = document.getElementById("LMResults");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
 
 ## LM
@@ -52,9 +61,9 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <span class="hljs-keyword">print</span>(<span class="hljs-literal">linearcreditscoring</span>)
 </code></pre>
-<button style="width:100% margin-top: 0px" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
+<button style="width:100%;margin-top: 0px;" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button>
-
+<div id="LMResults">
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
 <font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
  <b>3</b> successful models have been tested 
@@ -109,6 +118,8 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   </tr>
 </tbody>
 </table>
+
+</div>
 Let's see the best model
 <pre class="r codeFragment" ><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
 
