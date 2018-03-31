@@ -14,7 +14,7 @@ This section is still under construction. Sorry for the inconvenience
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
 <script>
 $(document).ready(function({
-$("#LM-1").click(function(){
+$("#LM-1").click(function({
     $("#LMResults").toggle();
 });
     });
