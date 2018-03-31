@@ -64,7 +64,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </code></pre>
 <p class="buttonFragment"><button id="LM-1" style="width:100%;margin-top: 0px;" class="method-button" onClick="location.href='#lm'">Run <i class="fa fa-angle-double-right"></i>
 </button></p>
-<div id="LMResults">
+<div id="LMResults" style="display: none;">
 <pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
 <font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
  <b>3</b> successful models have been tested 
@@ -120,7 +120,6 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </tbody>
 </table>
 
-</div>
 Let's see the best model
 <pre class="r codeFragment" ><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
 
@@ -177,6 +176,9 @@ Let's see the best model
  Multiple R-squared:  0.6332, Adjusted R-squared:  0.6053 
  F-statistic:  22.7 on 34 and 447 DF,  p-value: &lt; 2.2e-16
  </code></pre>
+
+</div>
+
 
 ## GLM
 First step charging the dataset and package
