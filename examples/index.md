@@ -17,7 +17,9 @@ This section is still under construction. Sorry for the inconvenience</font>
 function LMResults2() {var element = document.getElementById("LMResults2"); element.classList.toggle("hidden")};
 function GLMResults() {var element = document.getElementById("GLMResults"); element.classList.toggle("hidden")};
 function LMMResults() {var element = document.getElementById("LMMResults"); element.classList.toggle("hidden")};
-function DAResults() {var element = document.getElementById("DAResults"); element.classList.toggle("hidden")};</script>
+function DAResults() {var element = document.getElementById("DAResults"); element.classList.toggle("hidden")};
+function NNResults() {var element = document.getElementById("NNResults"); element.classList.toggle("hidden")};
+function SVMResults() {var element = document.getElementById("SVMResults"); element.classList.toggle("hidden")};</script>
 
 
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
@@ -175,7 +177,6 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </div>
 
 ## DA
-First step charging the dataset and package
 <pre class="r codeFragment"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
 <span class="hljs-keyword">library</span>(OptimClassifier)
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
@@ -194,13 +195,54 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 ## CART
 
-// TODO tutorials for Optim.CART and R
+<pre class="r codeFragment"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
+<span class="hljs-keyword">library</span>(OptimClassifier)
+<span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
+data(<span class="hljs-string">"AustralianCredit"</span>)
+<span class="hljs-comment"># Let's go with the model, if you had seen the LM example, this is very similar </span> 
+<span class="hljs-literal">fit</span> &lt;- <span class="hljs-keyword">Optim.CART</span>(<span class="hljs-string">"Y~."</span>, <span class="hljs-literal">AustralianCredit</span>,<span class="hljs-literal">p</span>=<span class="hljs-number">0.7</span> ,<span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)
+
+<span class="hljs-keyword">print</span>(<span class="hljs-literal">fit</span>)
+</code></pre>
+<p class="buttonFragment"><button id="CART" style="width:100%;margin-top: 0px;" class="method-button" onClick="CARTResults()">Run <i class="fa fa-angle-double-right"></i>
+</button></p>
+
+<div id="CARTResults" class="hidden">
+// TODO results for Optim.CART example
+</div>
 
 ## NN
 
-// TODO tutorials for Optim.NN and R
+<pre class="r codeFragment"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
+<span class="hljs-keyword">library</span>(OptimClassifier)
+<span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
+data(<span class="hljs-string">"AustralianCredit"</span>)
+<span class="hljs-comment"># Let's go with the model, if you had seen the LM example, this is very similar </span> 
+<span class="hljs-literal">fit</span> &lt;- <span class="hljs-keyword">Optim.NN</span>(<span class="hljs-string">"Y~."</span>, <span class="hljs-literal">AustralianCredit</span>,<span class="hljs-literal">p</span>=<span class="hljs-number">0.7</span> ,<span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)
 
+<span class="hljs-keyword">print</span>(<span class="hljs-literal">fit</span>)
+</code></pre>
+<p class="buttonFragment"><button id="NN" style="width:100%;margin-top: 0px;" class="method-button" onClick="NNResults()">Run <i class="fa fa-angle-double-right"></i>
+</button></p>
+
+<div id="NNResults" class="hidden">
+// TODO results for Optim.NN example
+</div>
 
 ## SVM
 
-// TODO tutorials for Optim.SVM and R
+<pre class="r codeFragment"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
+<span class="hljs-keyword">library</span>(OptimClassifier)
+<span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
+data(<span class="hljs-string">"AustralianCredit"</span>)
+<span class="hljs-comment"># Let's go with the model, if you had seen the LM example, this is very similar </span> 
+<span class="hljs-literal">fit</span> &lt;- <span class="hljs-keyword">Optim.SVM</span>(<span class="hljs-string">"Y~."</span>, <span class="hljs-literal">AustralianCredit</span>,<span class="hljs-literal">p</span>=<span class="hljs-number">0.7</span> ,<span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)
+
+<span class="hljs-keyword">print</span>(<span class="hljs-literal">fit</span>)
+</code></pre>
+<p class="buttonFragment"><button id="SVM" style="width:100%;margin-top: 0px;" class="method-button" onClick="SVMResults()">Run <i class="fa fa-angle-double-right"></i>
+</button></p>
+
+<div id="SVMResults" class="hidden">
+// TODO results for Optim.SVM example
+</div>
