@@ -5,6 +5,7 @@ title: Linear Models
 <p class="index-method"><button class="index-button LM-button">This method</button> 
 <button class="index-button GLM-button">Our proposal</button>
 	<button class="index-button LMM-button">Examples</button></p>
+	
 ## Description
 
 <div class="row">
@@ -17,7 +18,7 @@ title: Linear Models
 
 <div class="col-md-5">
 <img alt="Example of Linear Regression" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg">
-	<p class="img-caption">A graphic linear regression example.<br>Source: Wikipedia </p>
+	<p class="img-caption">A graphic linear regression example.<br><b>Source:</b> Wikipedia </p>
 </div>
 </div>
 
