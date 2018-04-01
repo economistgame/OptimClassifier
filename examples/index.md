@@ -14,7 +14,8 @@ This section is still under construction. Sorry for the inconvenience</font>
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
 
 <script> function LMResults() {var element = document.getElementById("LMResults"); element.classList.toggle("hidden")};
-function LMResults2() {var element = document.getElementById("LMResults2"); element.classList.toggle("hidden")};</script>
+function LMResults2() {var element = document.getElementById("LMResults2"); element.classList.toggle("hidden")};
+function GLMResults() {var element = document.getElementById("GLMResults"); element.classList.toggle("hidden")};</script>
 
 
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
@@ -137,7 +138,6 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 
 ## GLM
-First step charging the dataset and package
 <pre class="r codeFragment"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
 <span class="hljs-keyword">library</span>(OptimClassifier)
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
@@ -147,10 +147,12 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <span class="hljs-keyword">print</span>(<span class="hljs-literal">creditscoring</span>)
 </code></pre>
-<p class="buttonFragment"><button style="width:100%" class="method-button" onClick="location.href='#glm'">Run <i class="fa fa-angle-double-right"></i>
+<p class="buttonFragment"><button id="GLM" style="width:100%;margin-top: 0px;" class="method-button" onClick="GLMResults()">Run <i class="fa fa-angle-double-right"></i>
 </button></p>
 
-// TODO tutorials for Optim.GLM and R
+<div id="GLMResults" class="hidden">
+// TODO results for Optim.GLM example
+</div>
 
 ## LMM
 First step charging the dataset and package
