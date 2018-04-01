@@ -4,7 +4,7 @@ title: Linear Models
 ---
 <p class="index-method"><button class="index-button LM-button">This method</button> 
 <button class="index-button GLM-button">Our proposal</button>
-	<button class="index-button LMM-button">Examples</button></p>
+<button class="index-button LMM-button">Examples</button></p>
 	
 ## Description
 
