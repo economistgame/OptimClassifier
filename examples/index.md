@@ -15,7 +15,9 @@ This section is still under construction. Sorry for the inconvenience</font>
 
 <script> function LMResults() {var element = document.getElementById("LMResults"); element.classList.toggle("hidden")};
 function LMResults2() {var element = document.getElementById("LMResults2"); element.classList.toggle("hidden")};
-function GLMResults() {var element = document.getElementById("GLMResults"); element.classList.toggle("hidden")};</script>
+function GLMResults() {var element = document.getElementById("GLMResults"); element.classList.toggle("hidden")};
+function LMMResults() {var element = document.getElementById("LMMResults"); element.classList.toggle("hidden")};
+function DAResults() {var element = document.getElementById("DAResults"); element.classList.toggle("hidden")};</script>
 
 
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
