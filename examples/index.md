@@ -72,7 +72,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000  
   </code></pre>
  
-  We can see the results in the table for 3 transformation of response variable
+  <p>We can see the results in the table for 3 transformation of response variable</p>
   <table>
  <thead>
   <tr>
@@ -116,7 +116,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </tbody>
 </table>
 
-You can see in the table a different best parameters in bold font.
+You can see in the table a different best parameters in bold. For each parameter you get different results.
 
 
 Let's see the best model
