@@ -7,13 +7,20 @@ title: Linear Models
 	<button class="index-button LMM-button">Examples</button></p>
 ## Description
 
-**Linear Models** fits with coefficients $$ \beta = (\beta_1, ..., \beta_p) $$ to minimize the residual sum of squares between the observed responses in the dataset, and the responses predicted by the linear approximation, sorting by splitting the responses by a threshold.
+<div class="row">
+<div class="col-md-7">
 
+**Linear Models** fits with coefficients $$ \beta = (\beta_1, ..., \beta_p) $$ to minimize the residual sum of squares between the observed responses in the dataset, and the responses predicted by the linear approximation.
+
+<!--sorting by splitting the responses by a threshold.-->
+</div>
+
+<div class="col-md-5">
 <img alt="Example of Linear Regression" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg">
+</div>
+</div>
 
-**Optim.LM** is used to fit the best classification linear model to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when transformations are applied on the response variable. 
-
-<!--In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, type I error and type II error) according to a given criterion.-->
+**Optim.LM** is used to fit the best classification linear model to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when transformations are applied on the response variable. In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, type I error and type II error) according to a given criterion.-->
 
 ## Usage
 
