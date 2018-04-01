@@ -167,15 +167,30 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 
 <span class="hljs-keyword">print</span>(<span class="hljs-literal">modelChooser</span>)
 </code></pre>
-<p class="buttonFragment"><button style="width:100%" class="method-button" onClick="location.href='#lmm'">Run <i class="fa fa-angle-double-right"></i>
+<p class="buttonFragment"><button id="LMM" style="width:100%;margin-top: 0px;" class="method-button" onClick="LMMResults()">Run <i class="fa fa-angle-double-right"></i>
 </button></p>
 
-// TODO tutorials for Optim.LMM and R
+<div id="LMMResults" class="hidden">
+// TODO results for Optim.LMM example
+</div>
 
 ## DA
+First step charging the dataset and package
+<pre class="r codeFragment"><code><span class="hljs-comment"># Load the package, if you still do not have it loaded</span>
+<span class="hljs-keyword">library</span>(OptimClassifier)
+<span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
+data(<span class="hljs-string">"AustralianCredit"</span>)
+<span class="hljs-comment"># Let's go with the model, if you had seen the LM example, this is very similar </span> 
+<span class="hljs-literal">fit</span> &lt;- <span class="hljs-keyword">Optim.DA</span>(<span class="hljs-string">"Y~."</span>, <span class="hljs-literal">AustralianCredit</span>,<span class="hljs-literal">p</span>=<span class="hljs-number">0.7</span> ,<span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)
 
-// TODO tutorials for Optim.DA and R
+<span class="hljs-keyword">print</span>(<span class="hljs-literal">fit</span>)
+</code></pre>
+<p class="buttonFragment"><button id="DA" style="width:100%;margin-top: 0px;" class="method-button" onClick="DAResults()">Run <i class="fa fa-angle-double-right"></i>
+</button></p>
 
+<div id="DAResults" class="hidden">
+// TODO results for Optim.DA example
+</div>
 
 ## CART
 
