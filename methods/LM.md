@@ -10,7 +10,7 @@ title: Linear Models
 <div class="row">
 <div class="col-md-7">
 
-**Linear Models** fits with coefficients $$ \beta = (\beta_1, ..., \beta_p) $$ to minimize the residual sum of squares between the observed responses in the dataset, and the responses predicted by the linear approximation.
+<b>Linear Models</b> fits with coefficients $$ \beta = (\beta_1, ..., \beta_p) $$ to minimize the residual sum of squares between the observed responses in the dataset, and the responses predicted by the linear approximation.
 
 <!--sorting by splitting the responses by a threshold.-->
 </div>
