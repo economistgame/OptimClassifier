@@ -607,3 +607,9 @@ margin:-100px 0 0; /* negative fixed header height */
 .hometitle {
    font-weight: 100;
 }
+
+.img-caption{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 16px;
+}
