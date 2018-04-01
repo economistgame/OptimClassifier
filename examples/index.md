@@ -72,54 +72,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000  
   </code></pre>
  
-  <p>We can see the results in the table for 3 transformation of response variable</p>
-  <table>
- <thead>
-  <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Model </th>
-   <th style="text-align:right;"> rmse </th>
-   <th style="text-align:right;"> threshold </th>
-   <th style="text-align:right;"> success_rate </th>
-   <th style="text-align:right;"> ti_error </th>
-   <th style="text-align:right;"> tii_error </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> 1 </td>
-   <td style="text-align:left;"> LM </td>
-   <td style="text-align:right;"> <b>0.3426</b> </td>
-   <td style="text-align:right;"> 1.6 </td>
-   <td style="text-align:right;"> <b>0.8413</b> </td>
-   <td style="text-align:right;"> 0.0192 </td>
-   <td style="text-align:right;"> 0.1394 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> SQRT.LM </td>
-   <td style="text-align:right;"> 0.4480 </td>
-   <td style="text-align:right;"> 1.2 </td>
-   <td style="text-align:right;"> 0.8317 </td>
-   <td style="text-align:right;"> <b>0.0144</b> </td>
-   <td style="text-align:right;"> 0.1538 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 3 </td>
-   <td style="text-align:left;"> LOG.LM </td>
-   <td style="text-align:right;"> 1.1473 </td>
-   <td style="text-align:right;"> 1.0 </td>
-   <td style="text-align:right;"> 0.5961 </td>
-   <td style="text-align:right;"> 0.4038 </td>
-   <td style="text-align:right;"> <b>0.0000</b> </td>
-  </tr>
-</tbody>
-</table>
-
-You can see in the table a different best parameters in bold. For each parameter you get different results.
-
-
-Let's see the best model
+ <p> Do you want to see the coefficients of best model? <br> Simply, make a summary </p>
 <pre class="r codeFragment" ><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
 
 <pre><code>
