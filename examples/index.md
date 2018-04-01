@@ -2,8 +2,8 @@
 layout: page
 title:  Tutorials
 ---
-<i class="fa fa-exclamation-triangle"></i>
-This section is still under construction. Sorry for the inconvenience
+<font color="red"><i class="fa fa-exclamation-triangle"></i>
+This section is still under construction. Sorry for the inconvenience</font>
 
 <button class="method-button" onClick="location.href='#lm'">LM</button>
 <button class="method-button GLM-button" onClick="location.href='#glm'">GLM</button>
