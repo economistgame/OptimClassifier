@@ -20,8 +20,6 @@ In general, OptimClassifier functions have an intuitive syntax, although some ex
 
 ## LM
 <i class="fa fa-exclamation-triangle"></i>
-This section is still under construction. Sorry for the inconvenience
-
 <style>
 .hljs-literal {
 color: #990073;
@@ -51,8 +49,10 @@ color: #d14;
 First step charging the dataset and package
 <pre class="r codeFragment"><code><span class="hljs-comment"># Load the package </span>
 <span class="hljs-keyword">library</span>(OptimClassifier)
+ 
 <span class="hljs-comment"># Load the dataset, <i>AustralianCredit</i> in this example </span> 
 data(<span class="hljs-string">"AustralianCredit"</span>)
+
 <span class="hljs-comment"># Let's go with the model </span> 
 <span class="hljs-literal">linearcreditscoring</span> &lt;- <span class="hljs-keyword">Optim.LM</span>(<span class="hljs-literal">Y~.</span>, <span class="hljs-literal">AustralianCredit</span>, <span class="hljs-literal">p</span> = <span class="hljs-number">0.7</span>, <span class="hljs-literal">seed</span>=<span class="hljs-number">2018</span>)
 
@@ -60,18 +60,18 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </code></pre>
 <p class="buttonFragment"><button id="LM-1" style="width:100%;margin-top: 0px;" class="method-button" onClick="LMResults()">Run <i class="fa fa-angle-double-right"></i>
 </button></p>
+
 <div id="LMResults" class="hidden">
-<pre><code><span class="hljs-comment"># Appears a warning because I don't choose threshold criteria </span> 
+<pre><code><span class="hljs-comment"># Appears a warning because we don't choose threshold criteria </span> 
 <font color="red"><b>Warning: Thresholds' criteria not selected. The success rate is defined as the default.</b></font> 
  <b>3</b> successful models have been tested 
   <br>
       Model      rmse threshold success_rate   ti_error tii_error 
   1      LM 0.3425880       1.6       0.8413     0.0192 0.1394231 
   2 SQRT.LM 0.4480197       1.2       0.8317     0.0144 0.1538462 
-  3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000
-  
-   
+  3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000  
   </code></pre>
+ 
   We can see the results in the table for 3 transformation of response variable
   <table>
  <thead>
@@ -89,9 +89,9 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   <tr>
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> LM </td>
-   <td style="text-align:right;"> 0.3426 </td>
+   <td style="text-align:right;"> <b>0.3426</b> </td>
    <td style="text-align:right;"> 1.6 </td>
-   <td style="text-align:right;"> 0.8413 </td>
+   <td style="text-align:right;"> <b>0.8413</b> </td>
    <td style="text-align:right;"> 0.0192 </td>
    <td style="text-align:right;"> 0.1394 </td>
   </tr>
@@ -101,7 +101,7 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
    <td style="text-align:right;"> 0.4480 </td>
    <td style="text-align:right;"> 1.2 </td>
    <td style="text-align:right;"> 0.8317 </td>
-   <td style="text-align:right;"> 0.0144 </td>
+   <td style="text-align:right;"> <b>0.0144</b> </td>
    <td style="text-align:right;"> 0.1538 </td>
   </tr>
   <tr>
@@ -111,10 +111,13 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
    <td style="text-align:right;"> 1.0 </td>
    <td style="text-align:right;"> 0.5961 </td>
    <td style="text-align:right;"> 0.4038 </td>
-   <td style="text-align:right;"> 0.0000 </td>
+   <td style="text-align:right;"> <b>0.0000</b> </td>
   </tr>
 </tbody>
 </table>
+
+You can see in the table a different best parameters in bold font.
+
 
 Let's see the best model
 <pre class="r codeFragment" ><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
