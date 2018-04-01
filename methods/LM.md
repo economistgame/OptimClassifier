@@ -17,6 +17,7 @@ title: Linear Models
 
 <div class="col-md-5">
 <img alt="Example of Linear Regression" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg">
+	<p class="img-caption">A graphic linear regression example.<br>Source: Wikipedia </p>
 </div>
 </div>
 
