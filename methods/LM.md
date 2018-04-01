@@ -2,6 +2,9 @@
 layout: page
 title: Linear Models
 ---
+<p class="index-method"><button class="index-button LM-button">This method</button> 
+<button class="index-button GLM-button">Our proposal</button>
+	<button class="index-button LMM-button">Examples</button></p>
 ## Description
 
 **Linear Models** fits with coefficients $$ \beta = (\beta_1, ..., \beta_p) $$ to minimize the residual sum of squares between the observed responses in the dataset, and the responses predicted by the linear approximation, sorting by splitting the responses by a threshold.
