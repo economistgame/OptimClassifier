@@ -13,13 +13,13 @@ This section is still under construction. Sorry for the inconvenience
 <button class="method-button NN-button" onClick="location.href='#nn'">NN</button>
 <button class="method-button SVM-button" onClick="location.href='#svm'">SVM</button>
 
-<script> function LMResults() {var element = document.getElementById("LMResults"); element.classList.toggle("hidden")};</script>
+<script> function LMResults() {var element = document.getElementById("LMResults"); element.classList.toggle("hidden")};
+function LMResults2() {var element = document.getElementById("LMResults2"); element.classList.toggle("hidden")};</script>
 
 
 In general, OptimClassifier functions have an intuitive syntax, although some examples are shown below.
 
 ## LM
-<i class="fa fa-exclamation-triangle"></i>
 <style>
 .hljs-literal {
 color: #990073;
@@ -72,9 +72,12 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
   3  LOG.LM 1.1473270       1.0       0.5961     0.4038 0.0000000  
   </code></pre>
  
- <p> Do you want to see the coefficients of best model? <br> Simply, make a summary </p>
+ <p> Do you want to see the coefficients of best model? <br> Simply, make a summary <i class="fa fa-smile-o" aria-hidden="true"></i></p>
 <pre class="r codeFragment" ><code><span class="hljs-keyword">summary</span>(<span class="hljs-literal">linearcreditscoring</span>)</code></pre>
+<p class="buttonFragment"><button id="LM-2" style="width:100%;margin-top: 0px;" class="method-button" onClick="LMResults2()">Run <i class="fa fa-angle-double-right"></i>
+</button></p>
 
+<div id="LMResults2" class="hidden">
 <pre><code>
  Call:
  stats::lm(formula = ModelsTested$train_formula[[i]], data = training, 
@@ -128,7 +131,8 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
  Multiple R-squared:  0.6332, Adjusted R-squared:  0.6053 
  F-statistic:  22.7 on 34 and 447 DF,  p-value: &lt; 2.2e-16
  </code></pre>
-
+ And if I want to see the second best model? We simply add a 2 to the summary
+</div>
 </div>
 
 
