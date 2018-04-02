@@ -152,7 +152,7 @@ info.da <- function(x, plain=FALSE,decimals=getOption("digits")) {
   } else {
     cat(
       nrow(x[[2]]),
-      format("sucessful models have been tested \n"),
+      format("successful models have been tested \n"),
       format("\n")
     )
     print(x[[2]],digits=decimals)
@@ -175,7 +175,7 @@ info.svm <- function(x, plain=FALSE, decimals=getOption("digits")) {
   } else {
     cat(
       nrow(x[[2]]),
-      format("sucessful models have been tested \n"),
+      format("successful models have been tested \n"),
       format("\n")
     )
     print(x[[2]],digits=decimals)
@@ -198,7 +198,7 @@ info.nn <- function(x, plain=FALSE, decimals=getOption("digits")) {
   } else {
     cat(
       nrow(x[[2]]),
-      format("sucessful models have been tested \n"),
+      format("successful models have been tested \n"),
       format("\n")
     )
    print(x[[2]],digits=decimals)

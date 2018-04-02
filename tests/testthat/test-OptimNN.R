@@ -5,6 +5,8 @@ test_that("Test example with Australian Credit Dataset for NN", {
   expect_equal(class(modelFit), "Optim")
   #Print
   print(modelFit)
+  print(modelFit, plain=TRUE)
+
   #Make sure if model was generated okey
   expect_equal(class(summary(modelFit)$value),"numeric")
 

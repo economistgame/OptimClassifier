@@ -1,8 +1,8 @@
-context("OptimCART")
+context("Optim LMM")
 
-test_that("Test CART with Australian Credit", {
+test_that("Test LMM with Australian Credit", {
   #Train a simply model
-  modelFit <- Optim.CART(Y~., AustralianCredit, p = 0.7, seed=2018)
+  modelFit <- Optim.LMM("Y", AustralianCredit)
   expect_equal(class(modelFit), "Optim")
   #Print
   print(modelFit, plain=TRUE)

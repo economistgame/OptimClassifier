@@ -1,4 +1,5 @@
 # OptimClassifier DEVEL
+* Added  a `includedata` option in training functions
 * Unified a `criteria` option in `Optim.DA` function
 * Added Issue report to `DESCRIPTION`
 * Added Travis-CI (Linux and Mac OS), and AppVeyor (Windows)
