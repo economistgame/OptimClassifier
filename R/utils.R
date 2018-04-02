@@ -25,8 +25,8 @@ OrderThresholds <- function(summary_table,column){
   }
   switch(column,
     "success_rate"= {order_summary <- dplyr::arrange(summary_table, dplyr::desc(get(column)))},
-    "error_ti" ={order_summary <- dplyr::arrange(summary_table, get(column))},
-    "error_tii" ={order_summary <- dplyr::arrange(summary_table, get(column))}
+    "ti_error" ={order_summary <- dplyr::arrange(summary_table, get(column))},
+    "tii_error" ={order_summary <- dplyr::arrange(summary_table, get(column))}
   )
   return(order_summary)
 }

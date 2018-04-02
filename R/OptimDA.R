@@ -28,7 +28,7 @@
 #' }
 #'
 #' @export
-Optim.DA <- function (formula, data,p, criteria=c("rmse","success_rate","ti_error","tii_error"),seed=NULL, ...)
+Optim.DA <- function (formula, data,p, criteria=c("rmse","success_rate","ti_error","tii_error"),includedata=FALSE,seed=NULL, ...)
 {
   if (!requireNamespace("MASS", quietly = TRUE)) {
     stop(crayon::bold(crayon::red("MASS package needed for this function to work. Please install it.")),
@@ -84,7 +84,8 @@ ans <- list(Type="DA",
             Models=order_models,
             Model=models,
             Predict=predicts,
-            Confussion_Matrixs=cm
+            Confussion_Matrixs=cm,
+            Data=ifelse(includedata,list(training,testing),list(NULL))
             )
 class(ans) <- "Optim"
 ans

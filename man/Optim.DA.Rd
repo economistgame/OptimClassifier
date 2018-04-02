@@ -5,7 +5,7 @@
 \title{Discover the best Discriminant Analysis for your data}
 \usage{
 Optim.DA(formula, data, p, criteria = c("rmse", "success_rate", "ti_error",
-  "tii_error"), seed = NULL, ...)
+  "tii_error"), includedata = FALSE, seed = NULL, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}

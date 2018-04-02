@@ -5,7 +5,7 @@
 \title{Tune CART for the optimal complexity parameter}
 \usage{
 Optim.CART(formula, data, p, criteria = c("success_rate", "ti_error",
-  "tii_error"), seed = NULL, ...)
+  "tii_error"), includedata = FALSE, seed = NULL, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}

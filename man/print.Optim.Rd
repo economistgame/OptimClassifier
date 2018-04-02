@@ -13,7 +13,7 @@
 
 \item{digits}{minimal number of significant digits.}
 
-\item{...}{further arguments passed to or from other methods. They are ignored in this function.}
+\item{...}{further arguments passed to or from other methods.}
 }
 \description{
 This function prints an Optim object. It is a method for the generic function print of class "Optim".

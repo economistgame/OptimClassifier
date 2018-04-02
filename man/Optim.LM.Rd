@@ -4,8 +4,8 @@
 \alias{Optim.LM}
 \title{Find out what is the transformation of the response variable that best fits a classification linear model to your data}
 \usage{
-Optim.LM(formula, data, p, threshold = NULL, criteria = c("success_rate",
-  "error_ti", "error_tii"), seed = NULL, ...)
+Optim.LM(formula, data, p, seqthreshold = 0.05, criteria = c("success_rate",
+  "error_ti", "error_tii"), includedata = FALSE, seed = NULL, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}
@@ -14,9 +14,11 @@ Optim.LM(formula, data, p, threshold = NULL, criteria = c("success_rate",
 
 \item{p}{A percentage of training elements}
 
-\item{threshold}{Linear models doesn't return a class, it returns probability because of he must cut by levels.}
+\item{seqthreshold}{Linear models doesn't return a class, it returns probability because of he must cut by levels. This parameter allows you to select the percentage between one threshold and next evaluated.}
 
 \item{criteria}{This variable selects the criteria to select the best threshold. The default value is \code{success_rate}}
+
+\item{includedata}{a list with training and testing datasets.}
 
 \item{seed}{a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.}
 

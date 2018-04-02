@@ -6,9 +6,10 @@
 #' @param formula A formula of the form \code{y ~ x1 + x2 + \dots}
 #' @param data Data frame from which variables specified in  \code{formula} are preferentially to be taken.
 #' @param p A percentage of training elements
-#' @param threshold Linear models doesn't return a class, it returns probability because of he must cut by levels.
+#' @param seqthreshold Linear models doesn't return a class, it returns probability because of he must cut by levels. This parameter allows you to select the percentage between one threshold and next evaluated.
 #' @param criteria This variable selects the criteria to select the best threshold. The default value is \code{success_rate}
 #' @param seed a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.
+#' @param includedata a list with training and testing datasets.
 #' @param ... arguments passed to \code{\link[stats]{lm}}
 #'
 #'
@@ -40,12 +41,10 @@
 #'
 #' @export
 
-Optim.LM <- function (formula, data,p,threshold=NULL,criteria=c("success_rate","error_ti","error_tii"),seed=NULL,...)
+Optim.LM <- function (formula, data,p, seqthreshold=0.05,criteria=c("success_rate","error_ti","error_tii"),includedata=FALSE,seed=NULL,...)
 {
-  ###Comprobar si variable objetivo tiene 2 o más clases
 
-
-  ##Optain the response variable. Ask to Senior
+  ##Optain the response variable.
   response_variable <- as.character(formula[[2]])
 
   #Detect if Response Variable have more than 2 classes
@@ -80,7 +79,7 @@ Optim.LM <- function (formula, data,p,threshold=NULL,criteria=c("success_rate","
              )
 
 models <- mc_threshold <- thresholds_tested <- newpredict <- rmse <- inference_posibilities <- best_threshold <- list()
-thresholdsused <- seq(0,1,0.05)
+thresholdsused <- seq(0,1,seqthreshold)
 Names  <- as.numeric(names(table(as.numeric(training[ , response_variable]))))
 
 for(i in 1:length(ModelsTested$Model_name)){
@@ -135,7 +134,8 @@ ans <- list(Type="LM",
             Model=models[models_output$List_Position],
             Predict=newpredict[models_output$List_Position],
             Thresholds=thresholds_tested[models_output$List_Position],
-            Confussion_Matrixs=mc_threshold[models_output$List_Position]
+            Confussion_Matrixs=mc_threshold[models_output$List_Position],
+            Data=ifelse(includedata,list(training,testing),list(NULL))
             )
 class(ans) <- "Optim"
 ans
@@ -144,19 +144,4 @@ return(ans)
 
 
 
-threshold <- function(quantile,y, yhat,categories){
-
-  current_threshold <- min(as.numeric(y)) + (max(as.numeric(y))-min(as.numeric(y)))*quantile
-
-  CutR <- ifelse(yhat >= current_threshold, categories[2], categories[1] )
-  mc_threshold <- MC(y=y, yhat =  CutR)
-  Success_rate_threshold <- (sum(diag(mc_threshold)))/sum(mc_threshold)
-  error_tI_threshold <- sum(mc_threshold[upper.tri(mc_threshold, diag = FALSE)])/sum(mc_threshold)
-  error_tII_threshold <- sum(mc_threshold[lower.tri(mc_threshold, diag = FALSE)])/sum(mc_threshold)
-  return(list(data.frame(threshold=current_threshold,
-                         success_rate=Success_rate_threshold,
-                         ti_error=error_tI_threshold,
-                         tii_error=error_tII_threshold),
-                        mc_threshold))
-}
 

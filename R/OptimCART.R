@@ -31,7 +31,7 @@
 #'
 #'@importFrom "stats" "predict"
 #' @export
-Optim.CART <- function (formula, data,p,criteria=c("success_rate","ti_error","tii_error"),seed=NULL,...)
+Optim.CART <- function (formula, data,p,criteria=c("success_rate","ti_error","tii_error"),includedata=FALSE, seed=NULL,...)
 {
   #Protect if it doesn't install Rpart
   if (!requireNamespace("rpart", quietly = TRUE)) {
@@ -82,7 +82,10 @@ Optim.CART <- function (formula, data,p,criteria=c("success_rate","ti_error","ti
              Models=SummaryTrees[,-7],
              Model=newtree[models_output$List_Position],
              Predict=newpredict[models_output$List_Position],
-             Confussion_Matrixs=mc[models_output$List_Position])
+             Confussion_Matrixs=mc[models_output$List_Position],
+             Data=ifelse(includedata,list(training,testing),list(NULL))
+            )
+
  class(ans) <- "Optim"
 ans
 

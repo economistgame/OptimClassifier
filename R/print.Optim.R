@@ -47,7 +47,7 @@ info.lm <- function(x, plain=FALSE, decimals=getOption("digits")) {
     cat(
       crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format("sucessful models have been tested \n")
+        format("successful models have been tested \n")
       ),
       crayon::black(
         format("\n"),
@@ -57,7 +57,7 @@ info.lm <- function(x, plain=FALSE, decimals=getOption("digits")) {
   } else {
     cat(
       nrow(x[[2]]),
-      format("sucessful models have been tested \n"),
+      format("successful models have been tested \n"),
       format("\n")
     )
     print(x[[2]], digits = decimals)
@@ -93,7 +93,7 @@ info.glm <- function(x, plain=FALSE, decimals=getOption("digits")) {
     cat(
       crayon::bold(nrow(x[[2]])),
       crayon::black(
-        format("sucessful models have been tested and")
+        format("successful models have been tested and")
       ),
       crayon::bold(nrow(x[[6]][[1]])),
       crayon::black(format("thresholds evaluated \n")),
@@ -106,7 +106,7 @@ info.glm <- function(x, plain=FALSE, decimals=getOption("digits")) {
   } else {
     cat(
       nrow(x[[2]]),
-      format("sucessful models have been tested \n"),
+      format("successful models have been tested \n"),
       format("\n")
     )
     print(x[[2]], digits = decimals)
@@ -129,7 +129,7 @@ info.cart <- function(x, plain=FALSE, decimals=getOption("digits")) {
   } else {
     cat(
       nrow(x[[2]]),
-      format("sucessful models have been tested \n"),
+      format("successful models have been tested \n"),
       format("\n")
     )
     print(x[[2]],digits=decimals)
