@@ -16,6 +16,8 @@ Optim.DA(formula, data, p, criteria = c("rmse", "success_rate", "ti_error",
 
 \item{criteria}{Select criterion to use.}
 
+\item{includedata}{logicals. If TRUE the training and testing datasets are returned.}
+
 \item{seed}{a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.}
 
 \item{...}{arguments passed to \code{\link[MASS]{lda}} and \code{\link[MASS]{qda}}}

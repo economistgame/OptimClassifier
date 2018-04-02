@@ -18,7 +18,7 @@ Optim.LM(formula, data, p, seqthreshold = 0.05, criteria = c("success_rate",
 
 \item{criteria}{This variable selects the criteria to select the best threshold. The default value is \code{success_rate}}
 
-\item{includedata}{a list with training and testing datasets.}
+\item{includedata}{logicals. If TRUE the training and testing datasets are returned.}
 
 \item{seed}{a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.}
 

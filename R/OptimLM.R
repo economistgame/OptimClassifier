@@ -9,7 +9,7 @@
 #' @param seqthreshold Linear models doesn't return a class, it returns probability because of he must cut by levels. This parameter allows you to select the percentage between one threshold and next evaluated.
 #' @param criteria This variable selects the criteria to select the best threshold. The default value is \code{success_rate}
 #' @param seed a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.
-#' @param includedata a list with training and testing datasets.
+#' @param includedata logicals. If TRUE the training and testing datasets are returned.
 #' @param ... arguments passed to \code{\link[stats]{lm}}
 #'
 #'
