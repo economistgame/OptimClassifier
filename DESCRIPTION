@@ -1,6 +1,6 @@
 Package: OptimClassifier
 Title: Create the Best Train for Classification Models
-Version: 0.1.2.9000
+Version: 0.1.4.9000
 Authors@R: c(
     person("Agustín", "Pérez-Martín", email = "agustin.perez@umh.es", role = "aut", comment = c(ORCID = "0000-0003-4994-3176")),
     person("Agustín", "Pérez-Torregrosa", email = "agustin.perez01@goumh.umh.es", role = c("cre","aut"), comment = c(ORCID = "0000-0001-5658-4795")),
@@ -15,9 +15,9 @@ Description: Patterns searching and binary classification in economic and financ
               Linear Mixed Models (LMM), Discriminant Analysis (DA), 
               Classification And Regression Trees (CART), Neural Networks (NN) and Support Vector Machines (SVM).
 Depends: R (>= 3.2.3)
-License: GPL (>= 2)
+License: GPL-3
 BugReports: https://github.com/economistgame/OptimClassifier/issues
-URL: https://github.com/economistgame/OptimClassifier
+URL: https://economistgame.github.io/OptimClassifier
 Imports: crayon,
          dplyr,
          MASS,
