@@ -5,7 +5,7 @@
 \title{Find out what is the error distribution and link function that best fits a classification generalized linear model to your data}
 \usage{
 Optim.GLM(formula, data, p, criteria = c("success_rate", "ti_error",
-  "tii_error"), seed = NULL, ...)
+  "tii_error"), includedata = FALSE, seed = NULL, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}
@@ -15,6 +15,8 @@ Optim.GLM(formula, data, p, criteria = c("success_rate", "ti_error",
 \item{p}{A percentage of training elements}
 
 \item{criteria}{This variable selects the criteria to select the best threshold. The default value is \code{success_rate}}
+
+\item{includedata}{logicals. If TRUE the training and testing datasets are returned.}
 
 \item{seed}{a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.}
 

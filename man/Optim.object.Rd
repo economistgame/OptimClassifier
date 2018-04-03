@@ -26,7 +26,13 @@ Optimized Classifier Object}
 
 \item{Predict }{a list of the predicts generated}
 
-\item{Confussion_Matrixs }{A data.frame whose content summarize the different models generated}
+\item{Thresholds }{a list whose content data.frames that summarize the different thresholds tested. This component is only available in LM, GLM, NN and SVM}
+
+\item{Confussion_Matrixs }{a data.frame whose content summarize the different models generated}
+
+\item{Data }{a list which training and testing datasets}
+
+\item{Inference Tests }{a data.frame with differents diagnostics for models generated. It is only available in LM}
 
 }
 \keyword{methods}

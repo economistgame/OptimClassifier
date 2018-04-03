@@ -7,11 +7,12 @@
 #' @param data Data frame from which variables specified in  \code{formula} are preferentially to be taken.
 #' @param p A percentage of training elements
 #' @param criteria This variable selects the criteria to select the best threshold. The default value is \code{success_rate}
+#' @param includedata logicals. If TRUE the training and testing datasets are returned.
 #' @param seed a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.
 #' @param ... arguments passed to \code{\link[stats]{glm}}
 #'
 #'
-#' @return An object of class \code{Optim}. See\code{\link{Optim.object}}
+#' @return An object of class \code{Optim}. See \code{\link{Optim.object}}
 
 #' @examples
 #' if(interactive()){
@@ -34,7 +35,7 @@
 #'
 #' @export
 
-Optim.GLM <- function (formula, data,p,criteria=c("success_rate","ti_error","tii_error"),seed=NULL,...)
+Optim.GLM <- function (formula, data,p,criteria=c("success_rate","ti_error","tii_error"),includedata=FALSE, seed=NULL,...)
 {
 
   #Detect Response Variable
@@ -93,7 +94,9 @@ Optim.GLM <- function (formula, data,p,criteria=c("success_rate","ti_error","tii
               Predict=predicts[models_output$List_Position],
               RMSE=rmse[models_output$List_Position],
               Thresholds=thresholds[models_output$List_Position],
-              Confussion_Matrixs=cm[models_output$List_Position])
+              Confussion_Matrixs=cm[models_output$List_Position],
+              Data=ifelse(includedata,list(training,testing),list(NULL))
+  )
   class(ans) <- "Optim"
   ans
 return(ans)

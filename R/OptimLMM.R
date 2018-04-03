@@ -13,7 +13,6 @@
 #'   For \code{Optim.LMM}, an object of  \code{"Optim"}. Items of interest in 3 the output are:
 #'   \item{Models }{a data.frame to summary all models tested}
 #'   \item{Model }{a list of the models generated from  \code{\link[lme4]{lmer}}}
-#'   \item{ }{A data.frame whose content summarize the different models generated}
 
 #' @examples
 #' if(interactive()){

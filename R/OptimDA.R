@@ -15,8 +15,7 @@
 #' a multivariate normal distribution.
 #' LDA differs from QDA in the assumption about the class variability. LDA assumes that all classes share the same within-class covariance matrix whereas QDA allows for distinct within-class covariance matrices.
 #'
-#' @return An object of class \code{Optim}. See\code{\link{Optim.object}}
-
+#' @return An object of class \code{Optim}. See \code{\link{Optim.object}}
 
 
 #' @examples
@@ -29,7 +28,7 @@
 #' }
 #'
 #' @export
-Optim.DA <- function (formula, data,p, criteria=c("rmse","success_rate","ti_error","tii_error"),includedata=FALSE,seed=NULL, ...)
+Optim.DA <- function (formula, data,p, criteria=c("rmse","success_rate","ti_error","tii_error"), includedata=FALSE, seed=NULL, ...)
 {
   if (!requireNamespace("MASS", quietly = TRUE)) {
     stop(crayon::bold(crayon::red("MASS package needed for this function to work. Please install it.")),

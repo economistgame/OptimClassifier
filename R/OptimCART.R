@@ -13,7 +13,7 @@
 #' @param ... arguments passed to \code{\link[rpart]{rpart}}
 #'
 #'
-#' @return An object of class \code{Optim}. See\code{\link{Optim.object}}
+#' @return An object of class \code{Optim}. See \code{\link{Optim.object}}
 #'
 #'@details  Classification And Regression Tree (CART) are a decision tree learning technique that produces either classification or regression trees, first introduced by
 #' Breiman et al.(1984). Trees used for regression and trees used for classification have some similarities -

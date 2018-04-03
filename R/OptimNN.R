@@ -4,16 +4,17 @@
 #' @description \code{Optim.NN}  function allows to find the best \code{NN}.
 #'
 #' @param formula A formula of the form \code{y ~ x1 + x2 + \dots}
-#' @param data Data frame from which variables specified in  \code{formula} are preferentially to be taken.
-#' @param p A percentage of training elements
-#' @param criteria This variable selects the criteria to select the best threshold. The default value is \code{success_rate}
+#' @param data data frame from which variables specified in  \code{formula} are preferentially to be taken.
+#' @param p a percentage of training elements
+#' @param criteria this variable selects the criteria to select the best threshold. The default value is \code{success_rate}
+#' @param includedata logicals. If TRUE the training and testing datasets are returned.
 #' @param seed a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.
-#' @param maxhiddenlayers The high number of hidden layers for the neural network considers.
-#' @param maxit The maximum allowable number of weights. There is no intrinsic limit in the code, but increasing \code{MaxNWts} will probably allow fits that are very slow and time-consuming.
+#' @param maxhiddenlayers the high number of hidden layers for the neural network considers.
+#' @param maxit the maximum allowable number of weights. There is no intrinsic limit in the code, but increasing \code{MaxNWts} will probably allow fits that are very slow and time-consuming.
 #' @param MaxNWts maximum number of iterations. Default 500.
 #' @param ... arguments passed to \code{\link[nnet]{nnet}}
 #'
-#' @return An object of class \code{Optim}. See\code{\link{Optim.object}}
+#' @return An object of class \code{Optim}. See \code{\link{Optim.object}}
 
 #' @examples
 #' if(interactive()){
@@ -27,7 +28,7 @@
 #'@importFrom "utils" "read.table" "write.table"
 #'
 #' @export
-Optim.NN <- function (formula, data, p, seed=NULL, criteria=c("success_rate","ti_error","tii_error"),maxhiddenlayers=10, maxit=500,MaxNWts=2000,...){
+Optim.NN <- function (formula, data, p, criteria=c("success_rate","ti_error","tii_error"),includedata=FALSE,seed=NULL,maxhiddenlayers=10, maxit=500,MaxNWts=2000,...){
 
    if (!requireNamespace("nnet", quietly = TRUE)) {
     stop(crayon::bold(crayon::red("nnet package needed for this function to work. Please install it.")),
@@ -84,7 +85,8 @@ Optim.NN <- function (formula, data, p, seed=NULL, criteria=c("success_rate","ti
               Model=models[Rank$List_Position],
               Predict=predicts[Rank$List_Position],
               Thresholds=thresholds_tested[Rank$List_Position],
-              Confussion_Matrix=mc_threshold[Rank$List_Position]
+              Confussion_Matrix=mc_threshold[Rank$List_Position],
+              Data=ifelse(includedata,list(training,testing),list(NULL))
               )
   class(ans) <- "Optim"
   return(ans)
