@@ -1,0 +1,143 @@
+---
+title: "Introduction"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+**OptimClassifier** provides a set of tools for creating models, selecting the best parameters combination for a model, and select the best threshold for your binary classification. The package contains tools for:
+
+- Linear Model (LM) 
+- Generalized Linear Model (GLM) 
+- Linear Mixed Model (LMM) 
+- Classification And Regression Tree (CART)
+- Discriminant Analysis (DA)
+- Neural Networks (NN)
+- Support Vector Machines (SVM)
+
+## Take a quick look at functions
+
+<style type="text/css">
+table td {padding: 0px 0px;border-width: 1px; border-style: inset;}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg {border-style:solid;padding: 0px  0px; border-width:1px; overflow:hidden;word-break:normal;border-color:black;}
+.tgd{border-style:solid;padding: 0px  0px; border-width:1px; overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding: 0px 0px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.index-button {border: none;width: 100%; min-width: 50px; padding: 7px 1px;text-align: center;font-weight: bold;text-decoration: none;display: inline-block;font-size: 12px;cursor: pointer;color: black;}
+.index-button:hover {background: grey;color: white;}
+.LM-button {  background-color: #66FF66; }/* Green */
+.LMM-button {background-color: #B2FF66;} /* Green 2 */
+.GLM-button {background-color: #33FF99;} /* Green 3 */ 
+.DA-button {background-color: #FFFF66;} /* Yellow */ 
+.CART-button {background-color: #FFB266;} /* Orange */
+.NN-button {background-color: #99CCFF;} /* Blue */
+.SVM-button {background-color: #CC99FF;} /* Violet */
+.OK-cell {text-align: center;font-size: 18px; padding: 5px 5px;}
+.Functions {text-align: center;font-size: 12px; padding: 5px 5px;}
+
+</style>
+<table class="tg"><tr><th class="tg-yw4l"></th><th class="tg-yw4l" colspan="7">Optim.</th></tr>
+  <tr><td class="tg-yw4l">Method</td><td class="tg-yw4l"><button class="index-button LM-button">LM</button></td>
+<td class="tg"><button class="index-button GLM-button">GLM</button></td>
+<td class="tg"><button class="index-button LMM-button">LMM</button></td>
+<td class="tg"><button class="index-button DA-button">DA</button></td>
+<td class="tg"><button class="index-button CART-button">CART</button></td>
+<td class="tg"><button class="index-button NN-button">NN</button><br></td>
+<td class="tg"><button class="index-button SVM-button">SVM</button></td></tr><tr>
+<td class="tg">Threshold optimization</td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="red">✖️</font>*</td>
+<td class="tg-yw4l OK-cell"><font color="red">✖️</font>*</td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td></tr><tr>
+<td class="tg">Parameter Optimization</td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font>*</td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font>*</td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td>
+<td class="tg-yw4l OK-cell"><font color="green">✅</font></td></tr><tr>
+<td class="tg">What parameter or option?</td>
+<td class="Functions">Transformations</td>
+<td class="Functions">Family & Links</td>
+<td class="Functions">Random variable</td>
+<td class="Functions">Linear or Quadratic</td>
+<td class="Functions">CP</td>
+<td class="Functions">Hidden layers</td>
+<td class="Functions">Kernels</td></tr>
+</table>
+
+
+## Notes and FAQs
+
+### What is optimization?
+
+Optimization is the process of modifying your parameters on your train model to improve the quality of your classification model. Based on your goals, optimization can involve ad implementation improvements or changes to your classification model. This package is focused in two questions, the threshold and several options.  
+
+### Why optimize your classification model?
+
+Optimizing your classification model is important when you want to completely achieve their potential. Through optimization, you can help improve the root mean square error (RMSE), grow the success rate, or accomplish others of your other goals (minimizing type I error or minimizing type II error).
+
+### How does Optim.LM optimize a Linear Model?
+
+
+### How does Optim.GLM optimize a Generalized Linear Model?
+
+
+### How does Optim.LMM optimize a Linear Mixed Model?
+
+
+### How does Optim.DA optimize a Discriminant Analysis?
+
+
+### How does Optim.CART optimize a Decision Tree?
+
+
+### How does Optim.NN optimize a Neural Network?
+
+
+### How does Optim.SVM optimize a Support Vector Machine?
+
+
+### Installation
+
+#### Install this package from CRAN (stable version):
+
+```r
+install.packages("OptimClassifier")
+```
+#### Install this package from Github (development version):
+
+For this, you can choose different packages such as:
+
+##### With [devtools](https://github.com/hadley/devtools)
+
+```r
+library(devtools)
+install_github("economistgame/OptimClassifier")
+```
+##### With [remotes](https://github.com/r-lib/remotes)
+
+```r
+library(remotes)
+install_github("economistgame/OptimClassifier")
+```
+
+### Bugs and feature requests
+
+If you find problems with the package, or there's anything that it doesn't do which you think it should, please submit them to https://github.com/economistgame/OptimClassifier/issues. In particular, let me know about optimizers and formats which you'd like supported, or if you have a workflow which might make sense for inclusion as a default convenience function.
+

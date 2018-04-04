@@ -4,8 +4,7 @@
 \alias{Optim.CART}
 \title{Tune CART for the optimal complexity parameter}
 \usage{
-Optim.CART(formula, data, p, criteria = c("success_rate", "ti_error",
-  "tii_error"), includedata = FALSE, seed = NULL, ...)
+Optim.CART(formula, data, p, includedata = FALSE, seed = NULL, ...)
 }
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}
@@ -13,8 +12,6 @@ Optim.CART(formula, data, p, criteria = c("success_rate", "ti_error",
 \item{data}{Data frame from which variables specified in  \code{formula} are preferentially to be taken.}
 
 \item{p}{A percentage of training elements}
-
-\item{criteria}{This variable selects the criteria to select the best threshold. The default value is \code{success_rate}.}
 
 \item{includedata}{logicals. If TRUE the training and testing datasets are returned.}
 

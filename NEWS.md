@@ -1,5 +1,8 @@
 # OptimClassifier DEVEL
 
+* Added a vignette
+* Remove redundant options in `Optim.CART` function
+* Update `Optim.LMM` function, added more options
 * Added new S3 methods for plot and predict directly with models
 * Added  a `includedata` option in training functions
 * Unified a `criteria` option in `Optim.DA` function

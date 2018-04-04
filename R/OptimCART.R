@@ -7,7 +7,6 @@
 #' @param formula A formula of the form \code{y ~ x1 + x2 + \dots}
 #' @param data Data frame from which variables specified in  \code{formula} are preferentially to be taken.
 #' @param p A percentage of training elements
-#' @param criteria This variable selects the criteria to select the best threshold. The default value is \code{success_rate}.
 #' @param includedata logicals. If TRUE the training and testing datasets are returned.
 #' @param seed a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.
 #' @param ... arguments passed to \code{\link[rpart]{rpart}}
@@ -32,7 +31,7 @@
 #'
 #'@importFrom "stats" "predict"
 #' @export
-Optim.CART <- function (formula, data,p,criteria=c("success_rate","ti_error","tii_error"),includedata=FALSE, seed=NULL,...)
+Optim.CART <- function (formula, data,p,includedata=FALSE, seed=NULL,...)
 {
   #Protect if it doesn't install Rpart
   if (!requireNamespace("rpart", quietly = TRUE)) {

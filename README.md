@@ -57,4 +57,6 @@ summary(creditscoring,2)
  
 
 ```
+### Bugs and feature requests
 
+If you find problems with the package, or there's anything that it doesn't do which you think it should, please submit them to <https://github.com/economistgame/OptimClassifier/issues>. In particular, let me know about optimizers and formats which you'd like supported, or if you have a workflow which might make sense for inclusion as a default convenience function.

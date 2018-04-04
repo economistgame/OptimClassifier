@@ -4,22 +4,29 @@
 \alias{Optim.LMM}
 \title{Discover what is the best random variable for your data set}
 \usage{
-Optim.LMM(response, data, randomatributtecandidate = NULL, ...)
+Optim.LMM(response, data, p, criteria = c("success_rate", "error_ti",
+  "error_tii"), randomatributtecandidate = NULL, includedata = FALSE,
+  seed = NULL, ...)
 }
 \arguments{
 \item{response}{A character object that contain the name of response variable about which a researcher is asking a question. \code{"Y"}}
 
 \item{data}{Data frame from which variables specified in  \code{formula} are preferentially to be taken.}
 
+\item{p}{A percentage of training elements}
+
+\item{criteria}{This variable selects the criteria to select the best threshold. The default value is \code{success_rate}}
+
 \item{randomatributtecandidate}{a character vector, or \code{NULL}. The default value is \code{NULL},the function tests with all those categorical variables in the data. The default option is nor recommended. Because the decision must be made according to the objective of statistical modeling. But it can serve as orientation.}
+
+\item{includedata}{logicals. If TRUE the training and testing datasets are returned.}
+
+\item{seed}{a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.}
 
 \item{...}{arguments passed to \code{\link[lme4]{lmer}}}
 }
 \value{
-For \code{Optim.LMM}, an object of  \code{"Optim"}. Items of interest in 3 the output are:
-  \item{Models }{a data.frame to summary all models tested}
-  \item{Model }{a list of the models generated from  \code{\link[lme4]{lmer}}}
-  \item{ }{A data.frame whose content summarize the different models generated}
+An object of class \code{Optim}. See \code{\link{Optim.object}}
 }
 \description{
 This function allows to find best \code{LMM} for a specific data.
