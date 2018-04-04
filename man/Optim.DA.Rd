@@ -23,7 +23,7 @@ Optim.DA(formula, data, p, criteria = c("rmse", "success_rate", "ti_error",
 \item{...}{arguments passed to \code{\link[MASS]{lda}} and \code{\link[MASS]{qda}}}
 }
 \value{
-An object of class \code{Optim}. See\code{\link{Optim.object}}
+An object of class \code{Optim}. See \code{\link{Optim.object}}
 }
 \description{
 This function search the best Discriminant Analysis (DA) between \code{LDA} and \code{QDA}.

@@ -23,7 +23,7 @@ Optim.CART(formula, data, p, criteria = c("success_rate", "ti_error",
 \item{...}{arguments passed to \code{\link[rpart]{rpart}}}
 }
 \value{
-An object of class \code{Optim}. See\code{\link{Optim.object}}
+An object of class \code{Optim}. See \code{\link{Optim.object}}
 }
 \description{
 The complexity parameter aims to save computing time by pruning off splits that are obviously not worthwhile. This function starting with null value of \code{cp} and ranks the different possibles levels of pruning trees  find best CART for different levels of cost complexity.

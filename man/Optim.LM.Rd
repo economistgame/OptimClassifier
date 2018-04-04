@@ -25,7 +25,7 @@ Optim.LM(formula, data, p, seqthreshold = 0.05, criteria = c("success_rate",
 \item{...}{arguments passed to \code{\link[stats]{lm}}}
 }
 \value{
-An object of class \code{Optim}. See\code{\link{Optim.object}}
+An object of class \code{Optim}. See \code{\link{Optim.object}}
 }
 \description{
 \code{Optim.LM} is used to fit the best classification linear model to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when transformations are applied on the response variable. In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, type I error and type II error) according to a given criterion.

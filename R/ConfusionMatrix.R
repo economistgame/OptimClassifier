@@ -62,7 +62,8 @@
 MC <- function(yhat, y, metrics=FALSE){
 
   if(class(yhat)!=class(y)){
-
+  yhat <- as.numeric(yhat)
+  y <- as.numeric(y)
   }
   Real <- y
   Estimated <- yhat

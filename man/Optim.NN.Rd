@@ -11,26 +11,26 @@ Optim.NN(formula, data, p, criteria = c("success_rate", "ti_error",
 \arguments{
 \item{formula}{A formula of the form \code{y ~ x1 + x2 + \dots}}
 
-\item{data}{Data frame from which variables specified in  \code{formula} are preferentially to be taken.}
+\item{data}{data frame from which variables specified in  \code{formula} are preferentially to be taken.}
 
-\item{p}{A percentage of training elements}
+\item{p}{a percentage of training elements}
 
-\item{criteria}{This variable selects the criteria to select the best threshold. The default value is \code{success_rate}}
+\item{criteria}{this variable selects the criteria to select the best threshold. The default value is \code{success_rate}}
 
 \item{includedata}{logicals. If TRUE the training and testing datasets are returned.}
 
 \item{seed}{a single value, interpreted as an integer, or \code{NULL}. The default value is \code{NULL}, but for future checks of the model or models generated it is advisable to set a random seed to be able to reproduce it.}
 
-\item{maxhiddenlayers}{The high number of hidden layers for the neural network considers.}
+\item{maxhiddenlayers}{the high number of hidden layers for the neural network considers.}
 
-\item{maxit}{The maximum allowable number of weights. There is no intrinsic limit in the code, but increasing \code{MaxNWts} will probably allow fits that are very slow and time-consuming.}
+\item{maxit}{the maximum allowable number of weights. There is no intrinsic limit in the code, but increasing \code{MaxNWts} will probably allow fits that are very slow and time-consuming.}
 
 \item{MaxNWts}{maximum number of iterations. Default 500.}
 
 \item{...}{arguments passed to \code{\link[nnet]{nnet}}}
 }
 \value{
-An object of class \code{Optim}. See\code{\link{Optim.object}}
+An object of class \code{Optim}. See \code{\link{Optim.object}}
 }
 \description{
 \code{Optim.NN}  function allows to find the best \code{NN}.

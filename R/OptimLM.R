@@ -129,9 +129,11 @@ summary_models <-cbind(data.frame(Model = ModelsTested$Model_name,
                                   rmse = unlist(rmse)),
                        do.call("rbind",best_threshold),
                        List_Position=c(1:length(unlist(rmse))))
+
 inference_posibilities <- cbind(Model = ModelsTested$Model_name,data.frame(do.call("rbind",inference_posibilities)))
 
 models_output <- OrderModels(summary_models,"rmse",desc=FALSE)
+
 ans <- list(Type="LM",
             Models=models_output[,-7],
             Model=models[models_output$List_Position],

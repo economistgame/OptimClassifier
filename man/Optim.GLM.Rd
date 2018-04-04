@@ -23,7 +23,7 @@ Optim.GLM(formula, data, p, criteria = c("success_rate", "ti_error",
 \item{...}{arguments passed to \code{\link[stats]{glm}}}
 }
 \value{
-An object of class \code{Optim}. See\code{\link{Optim.object}}
+An object of class \code{Optim}. See \code{\link{Optim.object}}
 }
 \description{
 \code{Optim.GLM} is used to fit the best classification \code{GLM} to a dataset. For this purpose, we examine the variation of the precision using the root mean square error (RMSE) when different error distribution and link function was used in the model. In addition, several thresholds are applied to check which is the most optimal cut for the indicators derived from the confusion matrix (success rate, type I error and type II error) according to a given criterion.

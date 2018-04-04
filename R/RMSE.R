@@ -20,6 +20,9 @@ RMSE <- function(yhat, y, type.of=c("numeric","text","scalable")){
   if(is.factor(y)==TRUE && is.factor(yhat)==FALSE){
   y <- as.numeric(y)-1
   }
+  if(is.factor(y)==FALSE && is.factor(yhat)==TRUE){
+    yhat <- as.numeric(yhat)-1
+  }
   Real <- y
   Estimated <- yhat
   rmse <- sqrt(sum((as.numeric(Estimated)-as.numeric(Real))^2)/length(Real))
