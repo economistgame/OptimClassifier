@@ -6,5 +6,8 @@ test_that("Test LMM with Australian Credit", {
   expect_equal(class(modelFit), "Optim")
   #Print
   print(modelFit, plain=TRUE)
+
   print(modelFit, plain=FALSE)
+
+  summary(modelFit)
   })

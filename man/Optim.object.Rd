@@ -32,7 +32,7 @@ Optimized Classifier Object}
 
 \item{Data }{a list which training and testing datasets}
 
-\item{Inference Tests }{a data.frame with differents diagnostics for models generated. It is only available in LM}
+\item{Inference Tests }{a data.frame with different diagnostics for models generated. It is only available in LM}
 
 }
 \keyword{methods}

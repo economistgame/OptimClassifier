@@ -1,4 +1,5 @@
-# OptimClassifier DEVEL
+
+# OptimClassifier 0.1.4
 
 * Added a vignette
 * Remove redundant options in `Optim.CART` function

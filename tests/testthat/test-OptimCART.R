@@ -7,4 +7,6 @@ test_that("Test CART with Australian Credit", {
   #Print
   print(modelFit, plain=TRUE)
   print(modelFit, plain=FALSE)
+
+  summary(modelFit)
   })
