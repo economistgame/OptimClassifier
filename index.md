@@ -26,7 +26,7 @@ The next table summarizes a state of package:
 
 [CRAN-Version-img]: https://www.r-pkg.org/badges/version/OptimClassifier
 [CRAN-Version-url]: https://cran.r-project.org/web/packages/OptimClassifier/
-[MRAN-Version-img]: https://img.shields.io/badge/MRAN-0.1.2-green.svg
+[MRAN-Version-img]: https://img.shields.io/badge/MRAN-0.1.4-blue.svg
 [MRAN-Version-url]: https://mran.microsoft.com/package/OptimClassifier
 
 
