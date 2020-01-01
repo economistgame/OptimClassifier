@@ -51,7 +51,8 @@ info.lm <- function(x, plain=FALSE, decimals=getOption("digits")) {
       ),
       crayon::black(
         format("\n"),
-        capture.output(format(x[[2]], digits = decimals))
+        capture.output(format(x[[2]], digits = decimals),
+                       format("\n"))
       )
     )
   } else {
