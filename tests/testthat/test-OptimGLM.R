@@ -7,5 +7,5 @@ test_that("Test GLM with Australian Credit", {
   #Print
   print(modelFit)
   #Make sure if model was generated okey
-  expect_equal(class(summary(modelFit)$coef),"matrix")
-  })
+  expect_equal(any(class(summary(modelFit)$coef)== "matrix"),TRUE)
+})

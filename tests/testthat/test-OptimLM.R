@@ -9,5 +9,5 @@ test_that("Test LM with Australian Credit", {
   print(modelFit, plain=FALSE)
 
   #Make sure if model was generated okey
-  expect_equal(class(summary(modelFit)$coef),"matrix")
+  expect_equal(any(class(summary(modelFit)$coef)== "matrix"),TRUE)
 })
