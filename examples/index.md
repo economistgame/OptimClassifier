@@ -155,7 +155,28 @@ data(<span class="hljs-string">"AustralianCredit"</span>)
 </button></p>
 
 <div id="GLMResults" class="hidden">
-// TODO results for Optim.GLM example
+<pre class="r codeFragment"><code>
+Warning: Thresholds' criteria not selected. The success rate is defined as the default. 
+ 
+Warning messages:
+1: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+2: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+3: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+
+7 successful models have been tested and 21 thresholds evaluated 
+ 
+               Model      rmse Threshold success_rate   ti_error tii_error 
+ 1      poisson(log) 0.3389622      0.50    0.8365385 0.01442308 0.1490385 
+ 2     poisson(sqrt) 0.3409605      0.55    0.8365385 0.01442308 0.1490385 
+ 3          gaussian 0.3425880      0.60    0.8413462 0.01923077 0.1394231 
+ 4           poisson 0.3430554      0.55    0.8365385 0.01442308 0.1490385 
+ 5 binomial(cloglog) 0.3519640      0.35    0.8269231 0.01923077 0.1538462 
+ 6  binomial(probit) 0.3587217      0.45    0.8221154 0.02403846 0.1538462 
+ 7   binomial(logit) 0.3595036      0.35    0.8173077 0.01923077 0.1634615 
+</code>
+</pre>
+
+
 </div>
 
 ## LMM
