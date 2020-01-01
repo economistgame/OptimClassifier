@@ -4,6 +4,9 @@ language: R
 os:
 - linux
 - osx
+r:
+- release
+- devel
 sudo: false
 cache: packages
 
