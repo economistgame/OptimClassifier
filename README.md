@@ -1,7 +1,7 @@
 # OptimClassifier <img src="man/figures/logo.png" align="right" />
 
 
-[![Linux/Mac Build Status](https://travis-ci.org/economistgame/OptimClassifier.svg?branch=master)](https://travis-ci.org/economistgame/OptimClassifier)
+[![Linux/Mac Build Status*](https://travis-ci.org/economistgame/OptimClassifier.svg?branch=master)](https://travis-ci.org/economistgame/OptimClassifier)
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/f3h44m7jwr8ms9tf?svg=true)](https://ci.appveyor.com/project/economistgame/optimclassifier)
 [![Coverage](https://codecov.io/gh/economistgame/OptimClassifier/branch/master/graph/badge.svg)](https://codecov.io/gh/economistgame/OptimClassifier)
 
